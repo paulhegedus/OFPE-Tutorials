@@ -5,6 +5,22 @@ navbar:
   left:
     - text: "Home"
       href: index.html
+    - text: "About"
+      href: about.html
+    - text: "Diagrams"
+      menu:
+        - text: "OFPE Overview"
+          href: ofpe_overview.html
+        - text: "Database Creation"
+          href: db_creation.html
+        - text: "Data Import"
+          href: dat_import.html
+        - text: "Data Aggregation"
+          href: data_agg.html
+        - text: "Simulation/Analysis"
+          href: sim_anal.html
+        - text: "Prescription Generation"
+          href: rx_gen.html
     - text: "Tutorials"
       menu:
         - text: "Set Up"

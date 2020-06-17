@@ -274,6 +274,36 @@ $(document).ready(function () {
         <li>
   <a href="index.html">Home</a>
 </li>
+<li>
+  <a href="about.html">About</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Diagrams
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="ofpe_overview.html">OFPE Overview</a>
+    </li>
+    <li>
+      <a href="db_creation.html">Database Creation</a>
+    </li>
+    <li>
+      <a href="dat_import.html">Data Import</a>
+    </li>
+    <li>
+      <a href="data_agg.html">Data Aggregation</a>
+    </li>
+    <li>
+      <a href="sim_anal.html">Simulation/Analysis</a>
+    </li>
+    <li>
+      <a href="rx_gen.html">Prescription Generation</a>
+    </li>
+  </ul>
+</li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     Tutorials
@@ -319,10 +349,11 @@ $(document).ready(function () {
 
 
 <div id="section" class="section level1">
-<h1><img src="images/msu_coa_logo.png" align="right" width="120" height = "100" /> <img src="images/OFPE_logo.png" align="right" width="120" height = "100" /></h1>
-<p>The On-Farm Precision Experiments Framework was developed at Montana State University in 2015. Please refer to the <a href="https://sites.google.com/site/ofpeframework/">OFPE</a> website for more information. This webpage contains technical information about the OFPE framework and data process and assumes the reader has a familiarity with the project. A light explanation is given below.</p>
-<p>Research over the past 20 years has consistently indicated that crop response to inputs like fertilizers and herbicides are site specific in nature. Every field is different and most years are different. Therefore the OFPE takes advantage of modern technologies to conduct automated experiments on each field that will optimize the use of field-specific inputs based on maximizing farmer profits. The data stream available to agricultural producers can be captured by algorithms that manage data and automates the process of conducting experiments, field by field. Farm managers can build or join a database where each farm and field’s data can be stored for incorporation into the OFPE data pipeline, resulting in the simulation of a range of economic and climate futures, providing a basis for management under uncertainty and assessment of resilience.</p>
-<p>The OFPE project was initially funded by the Montana Research and Economic Development Initiative and continues to be funded by the Montana Fertilizer Advisory Committee and the Data Intensive Farm Management project at the University of Illinois to begin the process of creating an automated on-field experimentation system.</p>
+<h1><img src="images/msu_coa_logo.png" align="right" width="150" height = "130" /> <img src="images/OFPE_logo.png" align="right" width="150" height = "130" /></h1>
+<p>The On-Farm Precision Experiments Framework was developed at Montana State University in 2015. This webpage contains technical information about the OFPE framework and data process and is a complement to the README and vignettes available in the OFPE R Package. This website assumes the reader has a familiarity with the project, please refer to the <a href="https://sites.google.com/site/ofpeframework/">OFPE</a> website for more information or the <a href="about.html">About</a> page for a light explanation.</p>
+<p>You can install the released version of the OFPE R package from <a href="https://github.com">GitHub</a> with:</p>
+<pre class="r"><code># install.packages(&quot;devtools&quot;)
+devtools::install_github(&quot;paulhegedus/OFPE&quot;)</code></pre>
 </div>
 
 
