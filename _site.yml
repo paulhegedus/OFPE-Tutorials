@@ -7,6 +7,8 @@ navbar:
       href: index.html
     - text: "About"
       href: about.html
+    - text: "Contact"
+      href: contact.html 
     - text: "Diagrams"
       menu:
         - text: "OFPE Overview"
@@ -36,8 +38,7 @@ navbar:
         - text: "Annual Tasks"
         - text: "Edit/Run Google Earth Engine"
           href: run_gee.html 
-    - text: "Contact"
-      href: contact.html 
+    
 
 
     
