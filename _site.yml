@@ -1,7 +1,7 @@
 name: "ofpe-website"
 output_dir: "."
 navbar:
-  title: "OFPE Website"
+  title: "OFPE Framework"
   left:
     - text: "Home"
       href: index.html
@@ -12,9 +12,9 @@ navbar:
           href: postgres_setup.html
         - text: "Create Shapefile"
           href: create_shp_qgis.html
-        - text: "Google Earth Engine"
+        - text: "Google Earth Engine Set Up"
           href: gee_setup.html
-        - text: "Google Drive"
+        - text: "Google Drive Set Up"
           href: gd_setup.html
         - text: "---------"
         - text: "Annual Tasks"
