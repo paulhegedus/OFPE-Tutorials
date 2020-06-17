@@ -37,7 +37,7 @@ navbar:
         - text: "Edit/Run Google Earth Engine"
           href: run_gee.html 
     - text: "Contact"
-      href: contact.html
+      href: contact.html 
 
 
     
