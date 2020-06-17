@@ -19,7 +19,7 @@ navbar:
         - text: "---------"
         - text: "Annual Tasks"
         - text: "Edit/Run Google Earth Engine"
-          href: run_gee.html
+          href: run_gee.html 
 
 
     
