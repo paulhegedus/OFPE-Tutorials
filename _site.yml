@@ -1,0 +1,10 @@
+name: "ofpe-tutorial-website"
+output_dir: "."
+navbar:
+  title: "OFPE Tutorial Website"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "tutorial"
+      href: tutorial.html
+    
