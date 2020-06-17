@@ -1,5 +1,0 @@
----
-title: "tutorial"
----
-
-Template for OFPE tutorials. Still thinking about naming conventions

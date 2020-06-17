@@ -1,10 +1,25 @@
-name: "ofpe-tutorial-website"
+name: "ofpe-website"
 output_dir: "."
 navbar:
-  title: "OFPE Tutorial Website"
+  title: "OFPE Website"
   left:
     - text: "Home"
       href: index.html
-    - text: "tutorial"
-      href: tutorial.html
+    - text: "Tutorials"
+      menu:
+        - text: "Set Up"
+        - text: "PostgreSQL Set Up"
+          href: postgres_setup.html
+        - text: "Create Shapefile"
+          href: create_shp_qgis.html
+        - text: "Google Earth Engine"
+          href: gee_setup.html
+        - text: "Google Drive"
+          href: gd_setup.html
+        - text: "---------"
+        - text: "Annual Tasks"
+        - text: "Edit/Run Google Earth Engine"
+          href: run_gee.html
+
+
     
