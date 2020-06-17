@@ -1,7 +1,7 @@
 ---
 title: "On-Farm Precision Experiments"
 ---
-# OFPE <img src="images/msu_coa_logo.png" align="right" width="120" /> <img src="images/OFPE_logo.png" align="right" width="120" />
+# <img src="images/msu_coa_logo.png" align="right" width="120" /> <img src="images/OFPE_logo.png" align="right" width="120" />
 The On-Farm Precision Experiments Framework was developed at Montana State University in 2015. Please refer to the [OFPE](https://sites.google.com/site/ofpeframework/) website for more information. This webpage contains technical information about the OFPE framework and data process and assumes the reader has a familiarity with the project. A light explanation is given below.
 
 Research over the past 20 years has consistently indicated that crop response to inputs like fertilizers and herbicides are site specific in nature. Every field is different and most years are different. Therefore the OFPE takes advantage of modern technologies to conduct automated experiments on  each field that will optimize the use of field-specific inputs based on maximizing farmer profits. The data stream available to agricultural producers can be captured by algorithms that manage data and automates the process of conducting experiments, field by field. Farm managers can build or join a database where each farm and field's data can be stored for incorporation into the OFPE data pipeline, resulting in the simulation of a range of economic and climate futures, providing a basis for management under uncertainty and assessment of resilience.
