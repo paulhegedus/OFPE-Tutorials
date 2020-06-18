@@ -1,0 +1,23 @@
+---
+title: "Simulation/Analysis"
+---
+Once all explanatory and covariate data is aggregated to the response data observations, it can be used to train models of crop production (yield) or quality (protein). Experimentally varying input rates (fertilizer or seed) is crucial to developing the function for the relationship between the crop response and input. These models are then used in a Monte Carlo simulation that randomly selects an economic condition (winter wheat price, price of fertilizer or seed) to generate the probability of outcomes. Because the farmer has to make a decision on their input rates by March 30th for winter wheat, the farmer will not know the weather conditions for the rest of the growing season, so the user will be able to select a year or scenario to simulate. 
+
+#### Execute Simulation/Analysis
+The activity workflow for simulating management outcomes is described below;
+
+**TODO:activity diagram**
+
+And a diagram of the components for simulating management outcomes;
+
+**TODO:component diagram**
+
+
+
+
+
+
+
+
+
+

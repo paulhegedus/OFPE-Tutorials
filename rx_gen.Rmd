@@ -1,0 +1,26 @@
+---
+title: "Prescription Generation"
+---
+After the user analyzes the field specific data from their specified year and decides on a management strategy, a prescriptive fertilizer or seed map can be generated based on optimizing inputs. This optimization can take the form of profit maximization or profit maximization and pollution minimization. This prescription can reflect a specified price scenario or the *mean/median* of inputs across simulation results. The prescription is exported as a shapefile that the farmer can upload to their equipment and apply the inputs.
+
+#### Rx Creation
+The activity workflow for generating prescriptions is described below;
+
+**TODO:activity diagram**
+
+And a diagram of the components for generating prescriptions;
+
+**TODO:component diagram**
+
+
+
+
+
+
+
+
+
+
+
+
+

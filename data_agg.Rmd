@@ -1,0 +1,30 @@
+---
+title: "Data Aggregation"
+---
+Raw data from various sources need to be wrangled and aggregated together before statistical analysis and model development. Because yield and protein data are related to crop production and quality, the source of winter wheat value, covariate and explanatory data are used to enrich yield and protein datasets Due to equipment differences, yield and protein are gathered at different temporal resolutions (3 and 10 seconds, respectively) and subsequent spatial resolution, so are treated as separate datasets and not combined based on interpolation or estimation of protein data. The OFPE project aims to use the finest resolution of data possible to make decisions with data that has as little natural variation removed as possible.
+
+#### Enrich Datasets
+The activity workflow for enriching yield and protein datasets is described below;
+
+**TODO:activity diagram**
+
+And a diagram of the components for aggregating data;
+
+**TODO:component diagram**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
