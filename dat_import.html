@@ -355,7 +355,11 @@ $(document).ready(function () {
 <div id="on-farm-data" class="section level4">
 <h4>On-Farm Data</h4>
 <p>The OFPE project focuses on winter wheat yield and protein as response variables and nitrogen fertilizer or seed rates as explanatory variables, depending on whether the field is farmed conventionally or organically, respectively. These data are collected from the farm machinery as ESRI Shapefiles, barring CropScan protein data that is gathered as a comma-separated values file. These data can be batch uploaded to the database through a script that automatically identifies and organizes each upload.</p>
-<p>The process for importing on-farm data to the database is outlined in the activity diagram below; <img src="diagrams/ofpe_dat_import_pt1.png" alt="Part 1 of on-farm data import process. Demonstrates pre upload data processing. Blue activities are chained together by arrows, and black boxes indicate the addition of user inputs. Diamonds represent logical statements, where FALSE returns are routed from the side of the diamond and TRUE returns are routed from the top or bottom of the diamond." /></p>
+<p>The process for importing on-farm data to the database is outlined in the activity diagram below;</p>
+<div class="figure">
+<img src="diagrams/ofpe_dat_import_pt1.png" alt="" />
+<p class="caption">Part 1 of on-farm data import process. Demonstrates pre upload data processing. Blue activities are chained together by arrows, and black boxes indicate the addition of user inputs. Diamonds represent logical statements, where FALSE returns are routed from the side of the diamond and TRUE returns are routed from the top or bottom of the diamond.</p>
+</div>
 <div class="figure">
 <img src="diagrams/ofpe_dat_import_pt2.png" alt="" />
 <p class="caption">Part 2 of on-farm data import process. Demonstrates upload of data to database. Blue activities are chained together by arrows, and black boxes indicate the addition of user inputs. Diamonds represent logical statements, where FALSE returns are routed from the side of the diamond and TRUE returns are routed from the top or bottom of the diamond.</p>
