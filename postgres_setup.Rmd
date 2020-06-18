@@ -1,0 +1,19 @@
+---
+title: "PostgreSQL Set Up"
+---
+PostgreSQL is an open source relational database system and has the PostGIS geospatial database extension, which was the draw for using this database infrastructure for the OFPE project. All of the data gathered in the OFPE data stream is spatial data from fields that range from tens to hundreds of acres, making the PostGIS extension invaluable in handling and organizing the potentially huge datasets.
+
+The following tutorial describes the process of downloading and setting up PostgreSQL and setting up a local server. This tutorial is not need if the user is using a preexisting database that has been set up in the OFPE format. If so, the user will need the host, username, password, and database driver to connect. After setting up PostgreSQL, proceed to the database creation [diagrams](db_creation.html) and  [vignette](https://github.com/paulhegedus/OFPE/blob/master/vignettes/A1-DB_Create.Rmd) to begin the process of creating a database in the OFPE format. The user may need to proceed to the [tutorial](create_shp_qgis.html) for creating shapefiles for farm and field boundaries.
+
+### Tutorial
+Follow the directions below for preparing your system for the OFPE data pipeline.
+
+
+
+
+
+
+
+
+
+
