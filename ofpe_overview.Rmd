@@ -3,8 +3,12 @@ title: "OFPE Overview"
 ---
 The vignettes of the OFPE package follow the OFPE framework workflow. This process consists of creating a database with user specified field and farm data, importing data collected on-fields and from open sources, enriching yield and protein datasets, analyzing response of yield and protein to variable input rates, predicting net-return outcomes of management strategies, and generating site-specific prescriptions of inputs.
 
+The process follows the OFPE framework below where on-farm and open source data are combined to generate a low cost decsion aid for dryland winter wheat producers. The virtuous cycle of experimentation and data collection makes predictions stronger year after year. See [Lawrence et al. 2015](http://weedeco.msu.montana.edu/publications/pdfs/Lawrence_etal_2015.pdf) for an anaysis of the time it takes for OFPE to pay off.  
+
+![OFPE data framework showing the circular process of experiment creation and application, data collection, and prescription and experiment generation. Figured by Bruce Maxwell (2015).](images/ofpe_framework.png)
+
 #### OFPE Data Schema
-Below is a schematic of the general On-Field Precision Experiments data workflow framework.
+Below is a schematic of the general On-Field Precision Experiments data workflow.
 
 ![Key is found in the top left corner of the schematic. Green arrows represent processes that require the OFPE package. The PostgreSQL database in the center of the figure can be stored on a cloud server or a local computer (as indicated by shape). Dark blue boxes indicate processes that are vignettes of the OFPE package or pages of the OFPE Web Application. Light blue boxes represent alternate modules for executable processes.](diagrams/ofpe_data_workflow.png)
 
