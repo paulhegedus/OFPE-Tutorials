@@ -1,5 +1,6 @@
 ---
 title: "On-Farm Precision Experiments"
+author: "Paul Hegedus"
 ---
 # <img src="images/msu_coa_logo.png" align="right" width="150" height = "130" /> <img src="images/OFPE_logo.png" align="right" width="150" height = "130" />
 
