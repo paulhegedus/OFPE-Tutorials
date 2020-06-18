@@ -367,8 +367,9 @@ $(document).ready(function () {
 <p><img src="create_shp_qgis/step_pre_3b.png" /></p>
 <p><strong>4.</strong> Go to the ‘More services’ tab, select ‘Get contributed pack’, let it download, then select ‘Save’. You will now have</p>
 <p><img src="create_shp_qgis/step_pre_4.png" /></p>
-<div id="field-boundary" class="section level4">
-<h4>Field Boundary</h4>
+</div>
+<div id="field-boundary" class="section level3">
+<h3>Field Boundary</h3>
 <p>A field boundary should represent the boundary of an OFPE data-intensively managed field. This is used to identify incoming on-farm data, clip remotely-sensed data, for determining a 30m buffer from the field edge for cleaning, and creating a net of management cells across the field.</p>
 <p><strong>1.</strong> Open QGIS. If not downloaded, see above.</p>
 <p><strong>2.</strong> Go to the ‘QuickMapServices’ button, and select ‘Google’, then ‘Satellite’ from the dropdown menus. If these dropdowns are not viewable for you, see above. Any basemap could be selected, but ‘Satellite’ is easy for outlining fields or farms across a landscape.</p>
@@ -390,8 +391,8 @@ $(document).ready(function () {
 <p><img src="create_shp_qgis/step_fld_9.png" /></p>
 <p>You now have a field boundary that can be used in your OFPE database. See this <a href="db_creation.html">diagram</a> for where to add in field boundaries to the OFPE data pipeline.</p>
 </div>
-<div id="farm-bounding-box" class="section level4">
-<h4>Farm Bounding Box</h4>
+<div id="farm-bounding-box" class="section level3">
+<h3>Farm Bounding Box</h3>
 <p>A farm bounding box should be a polygon that surrounds the fields of the owning/managing farmer. It does not need to trace property or management lines, but cannot cover another farmer’s OFPE field. If it covers another farmer’s fields, the farm bounding box cannot 1) cover another OFPE farmer’s field or 2) if covering another OFPE farmer’s field, that field cannot be used for analysis or experimentation.</p>
 <p><strong>1.</strong> Follow Steps 1 - 7 from the <strong>Field Boundary</strong> section.</p>
 <p><strong>2.</strong> Draw the farm bounding box around all fields under ownership or management of the farmer of interest.</p>
@@ -401,7 +402,6 @@ $(document).ready(function () {
 </div>
 <p><strong>3.</strong> Follow Step 9 from the <strong>Field Boundary</strong> section to save the shapefile.</p>
 <p>You now have a field boundary that can be used in your OFPE database. See this <a href="db_creation.html">diagram</a> for where to add in farm bounding boxes to the OFPE data pipeline.</p>
-</div>
 </div>
 
 
