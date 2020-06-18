@@ -2,7 +2,7 @@
 title: "On-Farm Precision Experiments"
 author: "Paul Hegedus"
 ---
-# <img src="images/msu_coa_logo.png" align="right" width="170" height = "150" /> <img src="images/OFPE_logo.png" align="right" width="170" height = "150" />
+# <img src="images/msu_coa_logo.png" align="right" width="200" height = "175" /> <img src="images/OFPE_logo.png" align="right" width="200" height = "175" />
 
 The On-Farm Precision Experiments Framework was developed at Montana State University in 2015 by [Dr. Bruce Maxwell]((http://landresources.montana.edu/directory/faculty/1524374/bruce-maxwell)). This webpage contains technical information about the OFPE framework and data workflows, and is a complement to the README and vignettes available in the [OFPE R Package](https://github.com/paulhegedus/OFPE). All pages under the 'Diagrams' tab have an associated vignette in the OFPE package. This website assumes the reader has a familiarity with the project, please refer to the [OFPE website](https://sites.google.com/site/ofpeframework/) for more information or the [About](about.html) page for a light explanation. This website also provides the tutorials and background information for using the [OFPE web application](https://paulhegedus.shinyapps.io/OFPE_AnalysisAndSim_App_v1/?_ga=2.189182059.1336631904.1592115204-590292424.1592115204) which is hosted by [R Shiny](https://shiny.rstudio.com) and powered by the OFPE R package.
 
