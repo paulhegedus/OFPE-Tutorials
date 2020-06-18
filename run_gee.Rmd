@@ -1,0 +1,40 @@
+---
+title: "Edit/Run Google Earth Engine"
+---
+Remote sensing data is collected from Google Earth Engine and includes data temporally variable data such as weather and static data such as topogrophy. The user is responsible for running the Google Earth Engine Javascript code to download data for each year required. See this [tutorial](gee_setup.html) for adding farm boundaries to GEE as asset and this [tutorial](gd_setup.html) for setting up Google Drive to receive your data from Google Earth Engine. See the diagrams on this [page](dat_import.html) for an overview of the Google Earth Engine data download.
+
+Besides the section on creating the Google Earth Engine Javascript, the tutorial below outlines a workflow that should be repeated on an annual basis to download data for the past and current year (up to March 30th). 
+
+### Tutorial
+This tutorial assumes that the user has already set up a [Google Earth Engine](https://earthengine.google.com/) and [Google Drive](https://www.google.com/drive/) account. Additionally, it assumes the user has followed the setup instructions in this [tutorial](create_shp_qgis.html), this [tutorial](gee_setup.html), and this [tutorial](gd_setup.html). 
+
+### Script Creation
+This section of the tutorial is for gathering the OFPE script for gathering all relevant Google Earth Engine data. 
+
+**1.** 
+
+![](run_gee/step_cre_1.png)
+
+### Script Editing/Execution
+This section of the tutorial is for editing the OFPE script and executing it on an annual basis to collect relevant Google Earth Engine data. It can also be ran as often as required for any specified data.
+
+**1.**
+
+![](run_gee/step_upd_1.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
