@@ -1,0 +1,29 @@
+---
+title: "Google Drive Set Up"
+---
+Open source, remotely sensed satellite data collected from [Google Earth Engine](https://earthengine.google.com/) are downloaded to [Google Drive](https://www.google.com/drive/) in the OFPE data pipeline. The data is downloaded to Google Drive from Google Earth Engine, where the data can be batch uploaded to the PostgreSQL database. See the [OFPE framework](ofpe_overview.html) page for a diagram of the Google Drive incorporation.
+
+### Tutorial
+This tutorial is for setting up a Google Account and Google Drive to receive your data from Google Earth Engine.
+
+**1.** A Google Account is needed. If the user does not already possess this, follow Steps 1 - 2 of the [Google Earth Engine Set Up](gee_setup.html) tutorial.
+
+**2.** Go to [Google Drive](https://www.google.com/drive/) and sign in, hit the big 'New' button from your home page.
+
+![](gd_setup/step_2.png)
+
+**3.** Select 'Folder' and name it *GEE_Surfaces*, then click 'Create'.
+
+![](gd_setup/step_3a.png)
+
+![](gd_setup/step_3b.png)
+
+Now there is a specific folder that the Google Earth Engine code will look for to save remotely sensed data.
+
+
+
+
+
+
+
+
