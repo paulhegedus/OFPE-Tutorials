@@ -83,7 +83,7 @@ A farm bounding box should be a polygon that surrounds the fields of the owning/
 
 **3.** Follow Step 9 from the **Field Boundary** section to save the shapefile.
 
-You now have a field boundary that can be used in your OFPE database. See this  [diagram](db_creation.html) for where to add in farm bounding boxes to the OFPE data pipeline.
+You now have a farm boundary box that can be used in your OFPE database. See this  [diagram](db_creation.html) for where to add in farm bounding boxes to the OFPE data pipeline.
 
 
 
