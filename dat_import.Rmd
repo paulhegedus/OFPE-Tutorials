@@ -1,0 +1,40 @@
+---
+title: "Data Import"
+---
+The stream of data available from agricultural fields include data collected from farm machinery during normal farm operations such as seeding, spraying, and harvesting. Additionally, there is a vast amount of data available from remotely sensed satellite or sensor data.
+
+#### On-Farm Data
+The OFPE project focuses on winter wheat yield and protein as response variables and nitrogen fertilizer or seed rates as explanatory variables, depending on whether the field is farmed conventionally or organically, respectively. These data are collected from the farm machinery as ESRI Shapefiles, barring CropScan protein data that is gathered as a comma-separated values file. These data can be batch uploaded to the database through a script that automatically identifies and organizes each upload.
+
+The process for importing on-farm data to the database is outlined in the activity diagram below;
+![Part 1 of on-farm data import process. Demonstrates pre upload data processing. Blue activities are chained together by arrows, and black boxes indicate the addition of user inputs. Diamonds represent logical statements, where FALSE returns are routed from the side of the diamond and TRUE returns are routed from the top or bottom of the diamond.](diagrams/ofpe_dat_import_pt1.png)
+
+![Part 2 of on-farm data import process. Demonstrates upload of data to database. Blue activities are chained together by arrows, and black boxes indicate the addition of user inputs. Diamonds represent logical statements, where FALSE returns are routed from the side of the diamond and TRUE returns are routed from the top or bottom of the diamond.](diagrams/ofpe_dat_import_pt2.png)
+
+#### Google Earth Engine Data
+Remote sensing data is collected from Google Earth Engine and includes data temporally variable data such as weather and static data such as topogrophy. The user is responsible for running the Google Earth Engine Javascript code to download data for each year required. See this [tutorial](gee_setup.html) for adding farm boundaries to GEE as asset and this [tutorial](run_gee.html) for editing and using Javascript code. This data is downloaded to Google Drive, where the data can be batch uploaded to the database. See this [tutorial](gd_setup.html) for setting up Google Drive to receive your data from Google Earth Engine.
+
+The process for importing Google Earth Engine data to the database is outlined in the activity diagram below;
+![Google Earth Engine data import process. Demonstrates upload of data to database. Blue activities are chained together by arrows, and black boxes indicate the addition of user inputs. Diamonds represent logical statements, where FALSE returns are routed from the side of the diamond and TRUE returns are routed from the top or bottom of the diamond.](diagrams/ofpe_gee_import.png)
+
+
+And a diagram of the components for importing data to the database;
+
+**TODO:component diagram**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
