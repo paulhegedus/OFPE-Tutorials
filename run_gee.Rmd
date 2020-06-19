@@ -13,12 +13,12 @@ Precipitation and growing degree day information is collected from GRIDMET by th
 ### Naming Convention
 The naming convention for these files are important for the import of the data to the OFPE database. Again, you need to have a Google Drive folder set up with a folder called 'GEE_Surfaces' to receive these files. See this [tutorial](gd_setup.html) if not set up already. The import code is relatively rigid because this GEE data is under our control and we can nameand format how we like. The import code gathers information about the data from the name of the file so the naming convention becomes important. It would be easiest if these were not changed.
 
-**GENERAL FORMAT:** <farmername>_<scale>_<datasource>_<measure>_<current/previous year>_<year>_<loy>. 
+**GENERAL FORMAT:** *farmername*_*scale*_*datasource*_*measure*_*current/previous year*_*year*_*loy*. 
 
-+ *e.g.* “<farmer>_<farmname>_clre_20m_2013_mar” = 20 m resolution clre data from 2013 up until 03/30 for <farmer>'s fields at <farmname>
-+ *or*  “<farmer>_<farmname>_4km_gdd_prevYr_2018” = 4km gdd data from 2018 for <farmer>'s fields at <farmname>
++ *e.g.* “*farmer*_*farmname*_clre_20m_2013_mar” = 20 m resolution clre data from 2013 up until 03/30 for *farmer*'s fields at *farmname*
++ *or*  “*farmer*_*farmname*_4km_gdd_prevYr_2018” = 4km gdd data from 2018 for *farmer*'s fields at *farmname*
 
-*IMPORTANT:* If you change the name of any variable in the filenames, or if you use a new scale, check the GEE import script source code for compatibility.
+**IMPORTANT:** If you change the name of any variable in the filenames, or if you use a new scale, check the GEE import script source code for compatibility.
 
 
 ### Tutorial
@@ -28,7 +28,8 @@ This tutorial assumes that the user has already set up a [Google Earth Engine](h
 This section of the tutorial is for gathering the OFPE script for gathering all relevant Google Earth Engine data. 
 
 **1.** Download the Javascript code developed for the OFPE project.
-```{r}
+
+```{r, echo=FALSE}
 xfun::embed_file("run_gee/ofpe_gee_javascript.txt", "ofpe_gee_javascript.txt")
 ```
 
