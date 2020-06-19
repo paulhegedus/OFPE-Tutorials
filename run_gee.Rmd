@@ -25,15 +25,15 @@ The naming convention for these files are important for the import of the data t
 This tutorial assumes that the user has already set up a [Google Earth Engine](https://earthengine.google.com/) and [Google Drive](https://www.google.com/drive/) account. Additionally, it assumes the user has followed the setup instructions in this [tutorial](create_shp_qgis.html), this [tutorial](gee_setup.html), and this [tutorial](gd_setup.html). 
 
 ### Script Creation
-This section of the tutorial is for gathering the OFPE script for gathering all relevant Google Earth Engine data. 
+This section of the tutorial is for gathering the OFPE script for gathering all relevant Google Earth Engine (GEE) data. 
 
-**1.** Download the Javascript code developed for the OFPE project.
+**1.** Download the Javascript code developed for the OFPE project and open the file. This code can also be found [here](https://github.com/paulhegedus/Google_Earth_Engine/blob/master/OFPE/ogpe_gee_javascript.txt).
 
 ```{r, echo=FALSE}
-xfun::embed_file("run_gee/ofpe_gee_javascript.txt", "ofpe_gee_javascript.txt")
+xfun::embed_file("run_gee/ofpe_gee_javascript.txt", "OFPE GEE Code")
 ```
 
-![](run_gee/step_cre_1.png)
+![First few lines of the GEE OFPE code. This view is of TextEdit on a Mac.](run_gee/step_cre_1.png)
 
 ### Script Editing/Execution
 This section of the tutorial is for editing the OFPE script and executing it on an annual basis to collect relevant Google Earth Engine data. It can also be ran as often as required for any specified data.
