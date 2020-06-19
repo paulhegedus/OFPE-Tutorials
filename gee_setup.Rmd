@@ -30,9 +30,9 @@ Before uploading farm bounding boxes as 'Assets', the user needs to go to [Googl
 ![](gee_setup/step_5.png)
 
 
-**6.** Browse to the directory of the farm bounding box you are uploading by clicking the red 'SELECT' button. Select the .shp, .shx, .dbf, and .prj file extensions for the specified shapefile. Amend the name if desired. OFPE convention is '*<farmer>*_*<farmname>*_bbox'. Click 'Upload'.
+**6.** Browse to the directory of the farm bounding box you are uploading by clicking the red 'SELECT' button. Select the .shp, .shx, .dbf, and .prj file extensions for the specified shapefile. Amend the name if desired. OFPE convention is '*farmer*_*farmname*_bbox'. Click 'Upload'.
 
-![](gee_setup/step_6.png)
+![The Asset ID should follow the OFPE convention. This example does not. It should read something like, "hegedus_fakefarm_bbox".](gee_setup/step_6.png)
 
 **7.** After uploading, the 'Tasks' tab in the right side pane should appear orange. If you click on the orange 'Tasks' tab, a process should be present that indicates that Google Earth Engine is ingestin the asset.
 

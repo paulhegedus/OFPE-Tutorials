@@ -30,29 +30,82 @@ This section of the tutorial is for gathering the OFPE script for gathering all 
 **1.** Download the Javascript code developed for the OFPE project and open the file. This code can also be found [here](https://github.com/paulhegedus/Google_Earth_Engine/blob/master/OFPE/ogpe_gee_javascript.txt).
 
 ```{r, echo=FALSE}
-xfun::embed_file("run_gee/ofpe_gee_javascript.txt", "OFPE GEE Code")
+xfun::embed_file("run_gee/ofpe_gee_javascript.txt",
+                 "ofpe_gee_javascript.txt",
+                 "Download OFPE GEE Code")
 ```
 
 ![First few lines of the GEE OFPE code. This view is of TextEdit on a Mac.](run_gee/step_cre_1.png)
 
+
+**2.** Browse to the [Google Earth Engine Code Editor](https://code.earthengine.google.com/) and hit the red 'NEW' button in the left sided pane. Select and create any 'Repository' or 'Folder' objects, then create a new file. These can be named anything that you would like. You will need to make at least one repository.
+
+![Note that you will likely not have any repositories in the left side pane of the Google Earth Engine page. Follow the steps for any repositories or folders you desire before creating the file.](run_gee/step_cre_2.png)
+
+
+**3.** Copy the text in the .txt file downloaded in Step 1 and paste it into the new file made in Step 3. You may need to browse to your new file. The open file name will appear at the top in the blue bar. DO NOT EDIT OR ADD ANY CODE YET. Wait until after following the end of this section. The next few steps refer to lines of code in the file downloaded in Step 1. 
+
+![Paste the code from 'ofpe_gee_javascript.txt', downloaded in Step 1. ](run_gee/step_cre_3.png)
+
+
+**4.** First, for any assets you created in this [tutorial](gee_setup.html), enter all 'farmer_farmername' text strings in Line 88. Do not include the '_bbox' text here that I recommended adding in the tutorial. 
+
+![](run_gee/step_cre_4.png)
+
+
+**5.** Insert your Google Account Username in line 167. If you did not include '_bbox' at the end of your asset names, remove that from line 167. and make sure it matches your file structure.
+
+![](run_gee/step_cre_5.png)
+
+
+**6.** Before moving onto the next section and before you make any edits that add lines to your file, note that the next section will demonstrate how to edit lines 67 - 82, 85, and 88. Remember these lines in case the line numbers do not match up when you edit your script later.
+
+![These lines are what we need to edit to change what data is downloaded. Lines 67 - 82 determine the parameters to download, 85 are the years to download data for, and line 88 is the farm boundaries to download data for.](run_gee/step_cre_6.png)
+
+
+**7.** Assets need to be imported into the script before it will work. Copy and paste lines 13 to 22 and uncomment one of the sections. Hover your mouse over the uncommented code and select "Convert" in the pop-up window.
+
+![](run_gee/step_cre_7.png)
+
+
 ### Script Editing/Execution
 This section of the tutorial is for editing the OFPE script and executing it on an annual basis to collect relevant Google Earth Engine data. It can also be ran as often as required for any specified data.
 
-**1.**
+The script downloaded and set up in the section above has a looped structure so that any combination of parameters, years, and farms can be ran at any time. However, note that any data downloaded always goes to the 'GEE_Surfaces' folder set up in your Google Drive in this [tutorial](gd_setup.html). Additionally, in the process detailed in these [diagrams](dat_import.html), the R script that imports data from Google Drive to the PostgreSQL database will always move all of the data in the Google Drive. So to avoid long processes, keep the Google Drive folder clean.
 
-![](run_gee/step_upd_1.png)
+**1.** Turn parameters on or off by changing their indicator to 1 or 0, respectively. In the image below only weather and vegetation data will be downloaded (precCY, precPY, gddCY, gddPY, ndviCY, ndviPY, ndreCY, ndrePY, clreCY, clrePY).
 
-
-
-
+![Note the changes in lines 67 - 82 from the default with ones indicating parameters that will be downloaded.](run_gee/step_upd_1.png)
 
 
+**2.** Only include years that you would like to get data for. Data will only be downloaded if it is available for the year you select (i.e. Sentinel 2 data is not available prior to 2016). Remember that CY means that data for that year is gathered from 01-01 to 03-30. PY is the full year, 01-01 to 12-31 or 11-01 to 10-31 for precipitation (water year). So, for example, if you want to download precipitation data from the entirety of 2002, run precPY 2003. If you wanted NDVI data up to the decision point for 2005, run ndviCY 2005.
+
+![Note that the years selected here are all years between 2000 and 2020. Any subset or sequence of years can be selected, however if data from the datasets of the parameters you select are not available for those years, you will not get any data.](run_gee/step_upd_1.png)
 
 
+**3.** Add or delete any Asset ID's of farm bounding boxes to get data for. Only include the names of farms you want data for, just like for the years.
+
+![In the same line where you added the Asset ID's in the creation tutorial, only keep the farms you want active by deleting or commenting out Asset ID's.](run_gee/step_cre_4.png)
 
 
+**4.** Now click 'Run'. You will see the 'Tasks' tab appear orange if tasks are being initiated.
+
+![Note that some aspects of this image may be different. Blacked out sections are for MT OFPE farmer's privacy.](run_gee/step_upd_4.png)
 
 
+**5.** The initiated tasks need to be initialized. For each task, click the blue 'RUN' button. Then click 'Run' in the pop-up window. Repeat this process for every task you initialized.
+
+![](run_gee/step_upd_5a.png)
+
+![Note that some aspects of this image may be different. Blacked out sections are for MT OFPE farmer's privacy.](run_gee/step_upd_5b.png)
+
+
+**6.** Now would be a good time to give you the link to [Dongdong Kong's](https://github.com/kongdd) [gee_monkey](https://github.com/kongdd/gee_monkey.git) Google Earth Engine add-on that will make Step 5 not your worst nightmare. It's a $10 well spent in my opinion...
+
+![](run_gee/step_upd_6.png)
+
+
+Now you've got data downloading from Google Earth Engine and is on it's way to Google Drive. Again, see this [workflow](dat_import.html) for the next steps of importing the Google Earth Engine data to the PostgreSQL database.
 
 
 

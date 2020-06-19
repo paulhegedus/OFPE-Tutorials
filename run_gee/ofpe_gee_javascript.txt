@@ -164,7 +164,7 @@ for(j; j < years.length; j++){
     //****************************************************************
     // set up assets
     //****************************************************************
-    var table = ee.FeatureCollection("users/<GOOGLE DRIVE USERNAME>/" + farms[i] + "_bbox"); 
+    var table = ee.FeatureCollection("users/<GOOGLE ACCOUNT USERNAME>/" + farms[i] + "_bbox"); 
     // ^IMPORTANT^: Modify this path as needed. For example, remove "_bbox" if that is not in your asset names.
     var farm_name = table;
     var current_farm = farms[i];
