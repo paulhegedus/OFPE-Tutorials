@@ -3,7 +3,23 @@ title: "Edit/Run Google Earth Engine"
 ---
 Remote sensing data is collected from Google Earth Engine and includes data temporally variable data such as weather and static data such as topogrophy. The user is responsible for running the Google Earth Engine Javascript code to download data for each year required. See this [tutorial](gee_setup.html) for adding farm boundaries to GEE as asset and this [tutorial](gd_setup.html) for setting up Google Drive to receive your data from Google Earth Engine. See the diagrams on this [page](dat_import.html) for an overview of the Google Earth Engine data download.
 
-Besides the section on creating the Google Earth Engine Javascript, the tutorial below outlines a workflow that should be repeated on an annual basis to download data for the past and current year (up to March 30th). 
+Besides the section on creating the Google Earth Engine Javascript, the tutorial below outlines a workflow that should be repeated on an annual basis to download data for the past and current year (up to March 30th). Any parameters can be turned off, any selection of farms can be selected, and any years can be selected by the user. 
+
+### Description
+This code is for looping through a sequence of specified years for all farms and downloading all GEE variables for a specified year. The code takes the user selected years and downloads all data for that year up until 03/30. It also downloads the full year's worth of data for the previous year. This means that the least recent year of data in the database will be 1 minus the least recent year specified in the user selection. The user can select a sequence of years in order, or a string of years to download data for. This code was developed for efficiently downloading previous years data from GEE. However, because the user can specify specific years, this code can be used as the annual run once per year and will download all the variables needed for all the farms for the current year (up to mar) and previous year (full year) when 1 year is specified.In the database these are distinguished by a column labeled 'mar' or 'full' for up to march and full year, respectively. Note that water years are from November 1 to October 31. User also has control over what variables to collect so not all vars are collected if not desired.
+
+Precipitation and growing degree day information is collected from GRIDMET by the Idaho EPSCoR project and is 4 km resolution with data available from 1979. It is also collected from Daymet V3, by the NASA ORNL group, which is preferred due to it's 1km reolution. The surfaces data is collected from the USGS National Elevation Dataset at a 10 m scale from prior to 1999. The vegetation index data is collected from different sources based on the date requested. All data 2018 or later are 10 m resolution filtered top of atmosphere measures from the EU's Copernicus Sentinel 2. Prior to 2018 cy and 2016 py, data is collected from Landsat 5 if before 2012, Landsat 7 for 2012/2013, and Landsat 8 for after. Landsat 8 is collected until present to gap fill. S2 provides NDRE and CLRE (should be CIRE) bands for calculating. For Canadian farms the data is collected from NASA ORNL DaymetV3 at a 1km scale exclusively because the USGS NED is not available. These are estimates. Elevation data is from the National Elevaiton dataset at 10m scale for the USA and from the Canadian Digital Elevation Model at a 20m scale for elevation and SRTM from NASA at a 30m scale for slope, aspect, tpi.
+
+### Naming Convention
+The naming convention for these files are important for the import of the data to the OFPE database. Again, you need to have a Google Drive folder set up with a folder called 'GEE_Surfaces' to receive these files. See this [tutorial](gd_setup.html) if not set up already. The import code is relatively rigid because this GEE data is under our control and we can nameand format how we like. The import code gathers information about the data from the name of the file so the naming convention becomes important. It would be easiest if these were not changed.
+
+**GENERAL FORMAT:** <farmername>_<scale>_<datasource>_<measure>_<current/previous year>_<year>_<loy>. 
+
++ *e.g.* “<farmer>_<farmname>_clre_20m_2013_mar” = 20 m resolution clre data from 2013 up until 03/30 for <farmer>'s fields at <farmname>
++ *or*  “<farmer>_<farmname>_4km_gdd_prevYr_2018” = 4km gdd data from 2018 for <farmer>'s fields at <farmname>
+
+*IMPORTANT:* If you change the name of any variable in the filenames, or if you use a new scale, check the GEE import script source code for compatibility.
+
 
 ### Tutorial
 This tutorial assumes that the user has already set up a [Google Earth Engine](https://earthengine.google.com/) and [Google Drive](https://www.google.com/drive/) account. Additionally, it assumes the user has followed the setup instructions in this [tutorial](create_shp_qgis.html), this [tutorial](gee_setup.html), and this [tutorial](gd_setup.html). 
@@ -11,7 +27,10 @@ This tutorial assumes that the user has already set up a [Google Earth Engine](h
 ### Script Creation
 This section of the tutorial is for gathering the OFPE script for gathering all relevant Google Earth Engine data. 
 
-**1.** 
+**1.** Download the Javascript code developed for the OFPE project.
+```{r}
+xfun::embed_file("run_gee/ofpe_gee_javascript.txt", "ofpe_gee_javascript.txt")
+```
 
 ![](run_gee/step_cre_1.png)
 
