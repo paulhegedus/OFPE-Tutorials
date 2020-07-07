@@ -359,9 +359,13 @@ $(document).ready(function () {
 </div>
 <div id="ofpe-data-schema" class="section level4">
 <h4>OFPE Data Schema</h4>
-<p>Below is a schematic of the general On-Field Precision Experiments data workflow.</p>
+<p>Below are schematics of the general On-Field Precision Experiments data workflow and a more detailed diagrma.</p>
 <div class="figure">
 <img src="diagrams/ofpe_data_workflow.png" alt="" />
+<p class="caption">Key is found in the top right corner of the schematic. The green ring represents the R-Shiny OFPE web spplication which is driven by the OFPE R-Package (blue ring). These both require connection to a PostgreSQL spatial database with PostGIS enabled. The yellow boxes represent different pages of the OFPE web application and vignettes in the R-package. Black boxes represent user inputs and orange clouds represent cloud based tools.</p>
+</div>
+<div class="figure">
+<img src="diagrams/ofpe_data_diagram.png" alt="" />
 <p class="caption">Key is found in the top left corner of the schematic. Green arrows represent processes that require the OFPE package. The PostgreSQL database in the center of the figure can be stored on a cloud server or a local computer (as indicated by shape). Dark blue boxes indicate processes that are vignettes of the OFPE package or pages of the OFPE Web Application. Light blue boxes represent alternate modules for executable processes.</p>
 </div>
 </div>

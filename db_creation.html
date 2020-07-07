@@ -357,6 +357,10 @@ $(document).ready(function () {
 <h4>Database Schematic</h4>
 <p>The database schematic is outlined below;</p>
 <div class="figure">
+<img src="diagrams/ofpe_db_schema_intxn.png" alt="" />
+<p class="caption">OFPE database design Blue boxes represent schema names and gray boxes represent tables within each schema. The all_farms tables are “gee” = Google Earth Engine data, “grids” = 10m grids laid across file, “farms” = farm boundaries and information., “farmers” = farmer identifiaction, “fields” = experimental field boundaries and information, and “ssurgo” = SSURGO soil data. For every farmer, there is a "_r" and "_a" schema associated, for raw and aggregated data, respectively. In the raw schema there are tables for yield (“yld”), protein (“pro”), and as-applied nitrogen (“aa_n”) and seed rates (“aa_sr”). The aggregated schema contains data aggregated to the raw yield points (“yld”) or raw protein points (“pro”). Remotely sensed data from Google Earth Engine can be aggregated to the centers of the 10m grids without any on-farm data for any year satellite data is available (“sat”).</p>
+</div>
+<div class="figure">
 <img src="diagrams/ofpe_db_schema.png" alt="" />
 <p class="caption">TODO: Update figure. OFPE database schematic. Legend is in top left. Blue boxes represent schemas within the database. Orange boxes represent tables within schemas, and grey boxes are columns within each table.</p>
 </div>
@@ -367,7 +371,7 @@ $(document).ready(function () {
 <p>The process for creating a database is outlined in the activity diagram below. The user needs some field and farm boundaries to create the database, however field and farm boundaries can be added or modified later by connecting to the database and runnning the ‘Add X’ modules.</p>
 <div class="figure">
 <img src="diagrams/ofpe_db_mgmt.png" alt="" />
-<p class="caption">TODO: update figure. Blue processes are chained together by arrows, and black boxes indicate the addition of user inputs.</p>
+<p class="caption">TODO: UPDATE FIGURE. Blue processes are chained together by arrows, and black boxes indicate the addition of user inputs.</p>
 </div>
 <p>And a diagram of the components for executing the database creation and management workflow are outlined below;</p>
 <p><strong>TODO:component diagram</strong></p>
