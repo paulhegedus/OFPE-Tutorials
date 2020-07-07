@@ -354,10 +354,20 @@ $(document).ready(function () {
 <p>Raw data from various sources need to be wrangled and aggregated together before statistical analysis and model development. Because yield and protein data are related to crop production and quality, the source of winter wheat value, covariate and explanatory data are used to enrich yield and protein datasets Due to equipment differences, yield and protein are gathered at different temporal resolutions (3 and 10 seconds, respectively) and subsequent spatial resolution, so are treated as separate datasets and not combined based on interpolation or estimation of protein data. The OFPE project aims to use the finest resolution of data possible to make decisions with data that has as little natural variation removed as possible.</p>
 <div id="enrich-datasets" class="section level4">
 <h4>Enrich Datasets</h4>
-<p>The activity workflow for enriching yield and protein datasets is described below;</p>
-<p><strong>TODO:activity diagram</strong></p>
-<p>And a diagram of the components for aggregating data;</p>
-<p><strong>TODO:component diagram</strong></p>
+<p>The activity workflow for enriching yield and protein datasets is described below in Figure 1 and 2. The process requires the user to select the field to aggregate data for, the type of response variable (yield or grain protein content), the type of data experimented with (nitrogen fertilizer or seeding rates), the years to aggregate data for, whether to aggregate data to the centroid of 10m grid cells across the field or the raw observed data locations, and the time constraint for which to gather data for the year selected. The user can select the decision point at the end of March when farmers have to make nitrogen fertilzier application decisions, or the end of August after harvest so that data is collected to the point of observation. The difference is explored in this <a href="ch.2%20of%20paulhegs%20dissertation">paper</a>.</p>
+<div class="figure">
+<img src="diagrams/ofpe_dat_agg_pt1.png" alt="" />
+<p class="caption"><strong>Figure 1</strong>. Part 1 of the data aggregation process. Demonstrates enrichment of yield or protein datasets with remotely sensed covariate data and experimental data collected on-farms. Blue activities are chained together by arrows, and black boxes indicate the addition of user inputs. Diamonds represent logical statements, where FALSE returns are routed from the side of the diamond and TRUE returns are routed from the top or bottom of the diamond.</p>
+</div>
+<div class="figure">
+<img src="diagrams/ofpe_dat_agg_pt2.png" alt="" />
+<p class="caption"><strong>Figure 2</strong>. Part 2 of the data aggregation process. Demonstrates enrichment of yield or protein datasets with remotely sensed covariate data and experimental data collected on-farms. Blue activities are chained together by arrows, and black boxes indicate the addition of user inputs. Diamonds represent logical statements, where FALSE returns are routed from the side of the diamond and TRUE returns are routed from the top or bottom of the diamond.</p>
+</div>
+<p>A diagram demonstrating the implementation and existence of modules related to aggregating experimental data (Figure 3). This figure also includes the object oriented component diagrams for aggregating experimental data for analysis, simulation, and prescription generation.</p>
+<div class="figure">
+<img src="diagrams" alt="" />
+<p class="caption"><strong>Figure 3.</strong></p>
+</div>
 </div>
 
 

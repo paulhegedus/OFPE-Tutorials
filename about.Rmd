@@ -5,18 +5,17 @@ Research over the past 20 years has consistently indicated that crop response to
 
 **Resources**
 
-OFPE Website: <https://sites.google.com/site/ofpeframework/>
+[OFPE Project Website](https://sites.google.com/site/ofpeframework/)
 
-OFPE Package: <https://github.com/paulhegedus/OFPE.git>
+[OFPE Package Github Page](https://github.com/paulhegedus/OFPE.git)
 
-OFPE Web Application: <https://paulhegedus.shinyapps.io/OFPE_AnalysisAndSim_App_v1/?_ga=2.189182059.1336631904.1592115204-590292424.1592115204>
+[OFPE Web Application](https://paulhegedus.shinyapps.io/OFPE_AnalysisAndSim_App_v1/?_ga=2.189182059.1336631904.1592115204-590292424.1592115204)
 
-OFPE CropScan 3300H Visualization Application: <https://paulhegedus.shinyapps.io/OFPE_Protein_Application/?_ga=2.69643152.1880072526.1592481594-590292424.1592115204>
-
+[OFPE CropScan 3300H Visualization Application](https://paulhegedus.shinyapps.io/OFPE_Protein_Application/?_ga=2.69643152.1880072526.1592481594-590292424.1592115204)
 
 **Funding**
 
-The OFPE project was initially funded by the Montana Research and Economic Development Initiative ([MREDI](https://mus.edu/research/research_initiative.html)) and was continued to be funded by the Montana Fertilizer Advisory Committee ([MFAC](https://agriculture.montana.edu/mfac/index.html)) and the Data Intensive Farm Management project at the University of Illinois ([DIFM](https://publish.illinois.edu/data-intensive-farm-managment/)) to begin the process of creating an automated on-field experimentation system. Other support and funding has been provided by the Montana State University College of Agriculture ([MSU CoA](https://agriculture.montana.edu)), the MSU Department Land Resources and Environmental Sciences ([LRES](https://landresources.montana.edu)), and the Montana Institute on Ecosystems ([MT IoE](https://montanaioe.org)). Additionaly funding was provided by the Western Sustainable Agriculture Research and Education (WSARE).
+The OFPE project was initially funded by the Montana Research and Economic Development Initiative ([MREDI](https://mus.edu/research/research_initiative.html)) and is continued to be funded by the Montana Fertilizer Advisory Committee ([MFAC](https://agriculture.montana.edu/mfac/index.html)). Other funding sources include the Montana State University College of Agriculture ([MSU CoA](https://agriculture.montana.edu)), the MSU Department Land Resources and Environmental Sciences ([LRES](https://landresources.montana.edu)), and the Montana Institute on Ecosystems ([MT IoE](https://montanaioe.org)). Other support and funding has been provided by the Data Intensive Farm Management project at the University of Illinois ([DIFM](https://publish.illinois.edu/data-intensive-farm-managment/)). Funding for Paul Hegedus is provided by MSU and the Graduate Student Grants from the Western Sustainable Agriculture Research and Education (WSARE).
 
-# <img src="images/msu_coa_logo.png" align="left" width="50" height = "50" /> <img src="images/MTIOE_logo.png" align="left" width="150" height = "50" /> <img src="images/MREDI_logo.png" align="left" width="250" height = "50" />  <img src="images/DIFM_logo.png" align="left" width="150" height = "50" />  
+# <img src="images/MREDI_logo.png" align="left" width="250" height = "50" /> <img src="images/msu_coa_logo.png" align="left" width="50" height = "50" /> <img src="images/MTIOE_logo.png" align="left" width="150" height = "50" />   <img src="images/DIFM_logo.png" align="left" width="150" height = "50" />  <img src="images/WSARE_logo.gif" align="left" width="50" height = "50" />
 

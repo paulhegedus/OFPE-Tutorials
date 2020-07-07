@@ -351,22 +351,22 @@ $(document).ready(function () {
 </div>
 
 
-<p>The vignettes of the OFPE package follow the OFPE framework workflow. This process consists of creating a database with user specified field and farm data, importing data collected on-fields and from open sources, enriching yield and protein datasets, analyzing response of yield and protein to variable input rates, predicting net-return outcomes of management strategies, and generating site-specific prescriptions of inputs.</p>
-<p>The process follows the OFPE framework below where on-farm and open source data are combined to generate a low cost decsion aid for dryland winter wheat producers. The virtuous cycle of experimentation and data collection makes predictions stronger year after year. See <a href="http://weedeco.msu.montana.edu/publications/pdfs/Lawrence_etal_2015.pdf">Lawrence et al. 2015</a> for an anaysis of the time it takes for OFPE to pay off.</p>
+<p>The process follows the OFPE framework below where on-farm and open source data are combined to generate a low cost decsion aid for dryland winter wheat producers. Inputs are experimentally varied across the field, covariate data from open sources is gathered, and harvest data is collected to generate an experiment for next year that tests optimized input rates. The virtuous cycle of experimentation and data collection makes predictions stronger year after year. The framework concept is currently under development in winter wheat dryland systems in Montana. See <a href="http://weedeco.msu.montana.edu/publications/pdfs/Lawrence_etal_2015.pdf">Lawrence et al. 2015</a> for an anaysis of the time it takes for OFPE to pay off and the <a href="https://sites.google.com/site/ofpeframework/">OFPE Project Website</a> for more information.</p>
 <div class="figure">
 <img src="images/ofpe_framework.png" alt="" />
-<p class="caption">OFPE data framework showing the circular process of experiment creation and application, data collection, and prescription and experiment generation. Figured by Bruce Maxwell (2015).</p>
+<p class="caption"><strong>Figure 1.</strong> OFPE data framework showing the circular process of experiment creation and application, data collection, and prescription and experiment generation. Figured by Bruce Maxwell (2015).</p>
 </div>
 <div id="ofpe-data-schema" class="section level4">
 <h4>OFPE Data Schema</h4>
-<p>Below are schematics of the general On-Field Precision Experiments data workflow and a more detailed diagrma.</p>
+<p>The vignettes of the OFPE package follow the OFPE framework workflow. These vignettes are the low level API equivalent to pages found in the high level API found in the OFPE web application. Both of these tools are centered around the OFPE database (Figure 2, 3). This process consists of creating a database with user specified field and farm data, importing data collected on-fields and from open sources, enriching yield and protein datasets by aggregating covariate data, analyzing response of yield and protein to variable input rates, simualting and predicting net-return outcomes of management strategies, and generating site-specific prescriptions of inputs. Figure 2 represents a simplified schematic visualizing the relationship between the database, R-package, R-Shiny application, and the user while Figure 3 illustrates the process in more detail.</p>
 <div class="figure">
 <img src="diagrams/ofpe_data_workflow.png" alt="" />
-<p class="caption">Key is found in the top right corner of the schematic. The green ring represents the R-Shiny OFPE web spplication which is driven by the OFPE R-Package (blue ring). These both require connection to a PostgreSQL spatial database with PostGIS enabled. The yellow boxes represent different pages of the OFPE web application and vignettes in the R-package. Black boxes represent user inputs and orange clouds represent cloud based tools.</p>
+<p class="caption"><strong>Figure 2.</strong> Key is found in the top right corner of the schematic. The green ring represents the R-Shiny OFPE web spplication which is driven by the OFPE R-Package (blue ring). These both require connection to a PostgreSQL spatial database with PostGIS enabled. The yellow boxes represent different pages of the OFPE web application and vignettes in the R-package. Black boxes represent user inputs and orange clouds represent cloud based tools.</p>
 </div>
+<p>Below are schematics of the general OFPE data workflow and a more detailed diagram.</p>
 <div class="figure">
 <img src="diagrams/ofpe_data_diagram.png" alt="" />
-<p class="caption">Key is found in the top left corner of the schematic. Green arrows represent processes that require the OFPE package. The PostgreSQL database in the center of the figure can be stored on a cloud server or a local computer (as indicated by shape). Dark blue boxes indicate processes that are vignettes of the OFPE package or pages of the OFPE Web Application. Light blue boxes represent alternate modules for executable processes.</p>
+<p class="caption"><strong>Figure 3.</strong> Key is found in the top left corner of the schematic. Green arrows represent processes that require the OFPE package. The PostgreSQL database in the center of the figure can be stored on a cloud server or a local computer (as indicated by shape). Dark blue boxes indicate processes that are vignettes of the OFPE package or pages of the OFPE Web Application. Light blue boxes represent alternate modules for executable processes.</p>
 </div>
 </div>
 
