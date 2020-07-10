@@ -13,4 +13,11 @@ You can install the released version of the [OFPE R package](https://github.com/
 devtools::install_github("paulhegedus/OFPE")
 ```
 
+The associated [OFPE Data Package]([here](https://github.com/paulhegedus/OFPEDATA.git)) contains real on-farm example data that is used in the vignettes.
+
+``` r
+# install.packages("devtools")
+devtools::install_github("paulhegedus/OFPEDATA")
+```
+
 

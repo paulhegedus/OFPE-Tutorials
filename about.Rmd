@@ -7,7 +7,9 @@ Research over the past 20 years has consistently indicated that crop response to
 
 [OFPE Project Website](https://sites.google.com/site/ofpeframework/)
 
-[OFPE Package Github Page](https://github.com/paulhegedus/OFPE.git)
+[OFPE Tools Github Page](https://github.com/paulhegedus/OFPE.git)
+
+[OFPE Data Package Github Page]([here](https://github.com/paulhegedus/OFPEDATA.git))
 
 [OFPE Web Application](https://paulhegedus.shinyapps.io/OFPE_AnalysisAndSim_App_v1/?_ga=2.189182059.1336631904.1592115204-590292424.1592115204)
 
