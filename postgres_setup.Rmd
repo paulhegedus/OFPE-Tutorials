@@ -65,12 +65,22 @@ Follow the directions below for preparing your system for the OFPE data pipeline
 
 ![Open the *pgAdmin4* application to view your databases and servers.](postgres_setup/step_9a.png)
 
+
 ![You will need to select 'Reset Master Password' then enter your new master password for pgAdmin and select 'OK'.](postgres_setup/step_9b.png)
 
 ![Select the 'Servers' drop down in the left hand pane to activate the password pop up. Enter the password from Step 8 and check 'Save Password' then 'OK'. You may or may not see this error message.](postgres_setup/step_9c.png)
 
 ![The default 'postgres' database should be the only database visible.](postgres_setup/step_9d.png)
 
-**11.** Now you are all set up with PostgreSQL with a 'postgres' superuser that will be used for creating the OFPE formatted database. Proceed to the database creation [diagrams](db_creation.html) and  [vignette](https://github.com/paulhegedus/OFPE/blob/master/vignettes/A1-DB_Create.Rmd) to begin the process of creating a database in the OFPE format. The user may need to proceed to the [tutorial](create_shp_qgis.html) for creating shapefiles for farm and field boundaries.
+**10.** Now, we are ready to create our database. Go to the 'Object' tab, select 'Create', then 'Database...'.
+
+![Select Object>>Create>>Database.](postgres_setup/step_10.png)
+
+
+**11.** Now, type your desired database name in the 'Database' field of the pop-up window. Then click Save. In this example I used a database name called 'OFPE'.
+
+![Provide a database name.](postgres_setup/step_11.png)
+
+**12.** Now you are all set up with PostgreSQL with a 'postgres' superuser that will be used for creating the OFPE formatted database. Proceed to the database creation [diagrams](db_creation.html) and  [vignette](https://github.com/paulhegedus/OFPE/blob/master/vignettes/A1-DB_Create.Rmd) to begin the process of creating a database in the OFPE format. The user may need to proceed to the [tutorial](create_shp_qgis.html) for creating shapefiles for farm and field boundaries.
 
 
