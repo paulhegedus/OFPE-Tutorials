@@ -30,8 +30,8 @@ This section of the tutorial is for gathering the OFPE script for gathering all 
 **1.** Download the Javascript code developed for the OFPE project and open the file. This code can also be found [here](https://github.com/paulhegedus/Google_Earth_Engine/blob/master/OFPE/ogpe_gee_javascript.txt).
 
 ```{r, echo=FALSE}
-xfun::embed_file("run_gee/ofpe_gee_javascript.txt",
-                 "ofpe_gee_javascript.txt",
+xfun::embed_file("run_gee/ofpe_gee_javascript.js",
+                 "ofpe_gee_javascript.js",
                  "Download OFPE GEE Code")
 ```
 
