@@ -60,26 +60,61 @@ Follow the directions below for preparing your system for the OFPE data pipeline
 
 ![](postgres_setup/step_8f.png)
 
+**9.** Follow this step 9 if you are using a PC. First, open the Stack Builder when prompted, select PostGIS from the Spatial Extensions dropdown, and click through the ensuing pop-ups. 
 
-**9.** After the installation has completed, there should be a *pgAdmin* application. This will open the *pgAdmin* GUI in your preffered web browser. Upon opening, you will need to give a password to be your master password for *pgAdmin*. This will require inputting a password and selecting "Reset Master Password". Then select the 'Servers' drop down and enter the password for the 'postgres' superuser you made in Step 8. The PostgreSQL server dropdown should show the default 'postgres' database.
-
-![Open the *pgAdmin4* application to view your databases and servers.](postgres_setup/step_9a.png)
+![Open the Stack Builder and select your PostgreSQL server from the dropdwon.](postgres_setup/step_9a_windows.png)
 
 
-![You will need to select 'Reset Master Password' then enter your new master password for pgAdmin and select 'OK'.](postgres_setup/step_9b.png)
+![Select the PostGIS option in the Spatial Extension dropdown menu.](postgres_setup/step_9b_windows.png)
 
-![Select the 'Servers' drop down in the left hand pane to activate the password pop up. Enter the password from Step 8 and check 'Save Password' then 'OK'. You may or may not see this error message.](postgres_setup/step_9c.png)
 
-![The default 'postgres' database should be the only database visible.](postgres_setup/step_9d.png)
+![Select Yes for all ensuing pop-ups.](postgres_setup/step_9c_windows.png)
+
+
+![Select Finish to complete.](postgres_setup/step_9d_windows.png)
+
+**9.** Follow this step 9 if you are using a Mac. First, open the Stack Builder if prompted. Otherwise, browse to it from /Library/PostgreSQL/12/stackbuilder.app. Select PostGIS from the Spatial Extensions dropdown, and click through the ensuing pop-ups. 
+
+![Open the Stack Builder and select your PostgreSQL server from the dropdwon.](postgres_setup/step_9a_mac.png)
+
+
+![Select the PostGIS option in the Spatial Extension dropdown menu.](postgres_setup/step_9b_windows.png)
+
+
+![Select Next.](postgres_setup/step_9b_mac.png)
+
+
+![Enter your Master Password.](postgres_setup/step_9c_mac.png)
+
+
+![Hit Next.](postgres_setup/step_9d_mac.png)
+
+
+![Hit Finish when the installation is complete.](postgres_setup/step_9e_mac.png)
+
+
+![And hit Finish in the Stack Builder window.](postgres_setup/step_9f_mac.png)
+
+
+**10.** After the installation has completed, there should be a *pgAdmin* application. This will open the *pgAdmin* GUI in your preffered web browser. Upon opening, you will need to give a password to be your master password for *pgAdmin*. This will require inputting a password and selecting "Reset Master Password". Then select the 'Servers' drop down and enter the password for the 'postgres' superuser you made in Step 8. The PostgreSQL server dropdown should show the default 'postgres' database.
+
+![Open the *pgAdmin4* application to view your databases and servers.](postgres_setup/step_10a.png)
+
+
+![You will need to select 'Reset Master Password' then enter your new master password for pgAdmin and select 'OK'.](postgres_setup/step_10b.png)
+
+![Select the 'Servers' drop down in the left hand pane to activate the password pop up. Enter the password from Step 8 and check 'Save Password' then 'OK'. You may or may not see this error message.](postgres_setup/step_10c.png)
+
+![The default 'postgres' database should be the only database visible.](postgres_setup/step_10d.png)
 
 **10.** Now, we are ready to create our database. Go to the 'Object' tab, select 'Create', then 'Database...'.
 
-![Select Object>>Create>>Database.](postgres_setup/step_10.png)
+![Select Object>>Create>>Database.](postgres_setup/step_11.png)
 
 
 **11.** Now, type your desired database name in the 'Database' field of the pop-up window. Then click Save. In this example I used a database name called 'OFPE'.
 
-![Provide a database name.](postgres_setup/step_11.png)
+![Provide a database name.](postgres_setup/step_12.png)
 
 **12.** Now you are all set up with PostgreSQL with a 'postgres' superuser that will be used for creating the OFPE formatted database. Proceed to the database creation [diagrams](db_creation.html) and  [vignette](https://github.com/paulhegedus/OFPE/blob/master/vignettes/A1-DB_Create.Rmd) to begin the process of creating a database in the OFPE format. The user may need to proceed to the [tutorial](create_shp_qgis.html) for creating shapefiles for farm and field boundaries.
 

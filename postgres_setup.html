@@ -403,31 +403,77 @@ $(document).ready(function () {
 <p><img src="postgres_setup/step_8d.png" /></p>
 <p><img src="postgres_setup/step_8e.png" /></p>
 <p><img src="postgres_setup/step_8f.png" /></p>
-<p><strong>9.</strong> After the installation has completed, there should be a <em>pgAdmin</em> application. This will open the <em>pgAdmin</em> GUI in your preffered web browser. Upon opening, you will need to give a password to be your master password for <em>pgAdmin</em>. This will require inputting a password and selecting “Reset Master Password”. Then select the ‘Servers’ drop down and enter the password for the ‘postgres’ superuser you made in Step 8. The PostgreSQL server dropdown should show the default ‘postgres’ database.</p>
+<p><strong>9.</strong> Follow this step 9 if you are using a PC. First, open the Stack Builder when prompted, select PostGIS from the Spatial Extensions dropdown, and click through the ensuing pop-ups.</p>
 <div class="figure">
-<img src="postgres_setup/step_9a.png" alt="" />
+<img src="postgres_setup/step_9a_windows.png" alt="" />
+<p class="caption">Open the Stack Builder and select your PostgreSQL server from the dropdwon.</p>
+</div>
+<div class="figure">
+<img src="postgres_setup/step_9b_windows.png" alt="" />
+<p class="caption">Select the PostGIS option in the Spatial Extension dropdown menu.</p>
+</div>
+<div class="figure">
+<img src="postgres_setup/step_9c_windows.png" alt="" />
+<p class="caption">Select Yes for all ensuing pop-ups.</p>
+</div>
+<div class="figure">
+<img src="postgres_setup/step_9d_windows.png" alt="" />
+<p class="caption">Select Finish to complete.</p>
+</div>
+<p><strong>9.</strong> Follow this step 9 if you are using a Mac. First, open the Stack Builder if prompted. Otherwise, browse to it from /Library/PostgreSQL/12/stackbuilder.app. Select PostGIS from the Spatial Extensions dropdown, and click through the ensuing pop-ups.</p>
+<div class="figure">
+<img src="postgres_setup/step_9a_mac.png" alt="" />
+<p class="caption">Open the Stack Builder and select your PostgreSQL server from the dropdwon.</p>
+</div>
+<div class="figure">
+<img src="postgres_setup/step_9b_windows.png" alt="" />
+<p class="caption">Select the PostGIS option in the Spatial Extension dropdown menu.</p>
+</div>
+<div class="figure">
+<img src="postgres_setup/step_9b_mac.png" alt="" />
+<p class="caption">Select Next.</p>
+</div>
+<div class="figure">
+<img src="postgres_setup/step_9c_mac.png" alt="" />
+<p class="caption">Enter your Master Password.</p>
+</div>
+<div class="figure">
+<img src="postgres_setup/step_9d_mac.png" alt="" />
+<p class="caption">Hit Next.</p>
+</div>
+<div class="figure">
+<img src="postgres_setup/step_9e_mac.png" alt="" />
+<p class="caption">Hit Finish when the installation is complete.</p>
+</div>
+<div class="figure">
+<img src="postgres_setup/step_9f_mac.png" alt="" />
+<p class="caption">And hit Finish in the Stack Builder window.</p>
+</div>
+<p><strong>10.</strong> After the installation has completed, there should be a <em>pgAdmin</em> application. This will open the <em>pgAdmin</em> GUI in your preffered web browser. Upon opening, you will need to give a password to be your master password for <em>pgAdmin</em>. This will require inputting a password and selecting “Reset Master Password”. Then select the ‘Servers’ drop down and enter the password for the ‘postgres’ superuser you made in Step 8. The PostgreSQL server dropdown should show the default ‘postgres’ database.</p>
+<div class="figure">
+<img src="postgres_setup/step_10a.png" alt="" />
 <p class="caption">Open the <em>pgAdmin4</em> application to view your databases and servers.</p>
 </div>
 <div class="figure">
-<img src="postgres_setup/step_9b.png" alt="" />
+<img src="postgres_setup/step_10b.png" alt="" />
 <p class="caption">You will need to select ‘Reset Master Password’ then enter your new master password for pgAdmin and select ‘OK’.</p>
 </div>
 <div class="figure">
-<img src="postgres_setup/step_9c.png" alt="" />
+<img src="postgres_setup/step_10c.png" alt="" />
 <p class="caption">Select the ‘Servers’ drop down in the left hand pane to activate the password pop up. Enter the password from Step 8 and check ‘Save Password’ then ‘OK’. You may or may not see this error message.</p>
 </div>
 <div class="figure">
-<img src="postgres_setup/step_9d.png" alt="" />
+<img src="postgres_setup/step_10d.png" alt="" />
 <p class="caption">The default ‘postgres’ database should be the only database visible.</p>
 </div>
 <p><strong>10.</strong> Now, we are ready to create our database. Go to the ‘Object’ tab, select ‘Create’, then ‘Database…’.</p>
 <div class="figure">
-<img src="postgres_setup/step_10.png" alt="" />
+<img src="postgres_setup/step_11.png" alt="" />
 <p class="caption">Select Object&gt;&gt;Create&gt;&gt;Database.</p>
 </div>
 <p><strong>11.</strong> Now, type your desired database name in the ‘Database’ field of the pop-up window. Then click Save. In this example I used a database name called ‘OFPE’.</p>
 <div class="figure">
-<img src="postgres_setup/step_11.png" alt="" />
+<img src="postgres_setup/step_12.png" alt="" />
 <p class="caption">Provide a database name.</p>
 </div>
 <p><strong>12.</strong> Now you are all set up with PostgreSQL with a ‘postgres’ superuser that will be used for creating the OFPE formatted database. Proceed to the database creation <a href="db_creation.html">diagrams</a> and <a href="https://github.com/paulhegedus/OFPE/blob/master/vignettes/A1-DB_Create.Rmd">vignette</a> to begin the process of creating a database in the OFPE format. The user may need to proceed to the <a href="create_shp_qgis.html">tutorial</a> for creating shapefiles for farm and field boundaries.</p>
