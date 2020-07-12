@@ -11,8 +11,8 @@ navbar:
       menu:
         - text: "OFPE Overview"
           href: ofpe_overview.html
-        - text: "Database Creation"
-          href: db_creation.html
+        - text: "Database Management"
+          href: db_management.html
         - text: "Data Import"
           href: dat_import.html
         - text: "Data Aggregation"
