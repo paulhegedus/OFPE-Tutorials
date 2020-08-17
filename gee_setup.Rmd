@@ -8,37 +8,55 @@ Before uploading farm bounding boxes as 'Assets', the user needs to go to [Googl
 
 **1.** From the Google sign in page, select 'Create account' if you do not have a Google Account. Otherwise sign in and skip to Step 3.
 
-![](gee_setup/step_1.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "", echo = FALSE}
+knitr::include_graphics('gee_setup/step_1.png')
+```
 
 **2.** Fill out each step of the process.
 
-![](gee_setup/step_2.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "", echo = FALSE}
+knitr::include_graphics('gee_setup/step_2.png')
+```
 
 **3.** After you have a Google Account, go back to [Google Earth Engine](https://earthengine.google.com/) and click 'Sign Up'. Fill out each step of the process and receive verification.
 
 **4.** Go to the [Google Earth Engine Code Editor](https://code.earthengine.google.com/) page and sign into your account. Allow Earth Engine Code Editor to access your Google Account. Now you should have access to the Google Earth Engine Code Editor window.
 
-![](gee_setup/step_4a.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "", echo = FALSE}
+knitr::include_graphics('gee_setup/step_4a.png')
+```
 
-![](gee_setup/step_4b.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "", echo = FALSE}
+knitr::include_graphics('gee_setup/step_4b.png')
+```
 
-![Note that you will likely not have any repositories in the left side pane of the Google Earth Engine page.](gee_setup/step_4c.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "Note that you will likely not have any repositories in the left side pane of the Google Earth Engine page.", echo = FALSE}
+knitr::include_graphics('gee_setup/step_4c.png')
+```
 
 
 **5.** Go to the 'Assets' tab in the pane on the right side, and click the big red 'NEW' button, and select 'Shape files'. 
 
-![](gee_setup/step_5.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "", echo = FALSE}
+knitr::include_graphics('gee_setup/step_5.png')
+```
 
 
 **6.** Browse to the directory of the farm bounding box you are uploading by clicking the red 'SELECT' button. Select the .shp, .shx, .dbf, and .prj file extensions for the specified shapefile. Amend the name if desired. OFPE convention is '*farmer*_*farmname*_bbox'. Click 'Upload'.
 
-![The Asset ID should follow the OFPE convention. This example does not. It should read something like, "hegedus_fakefarm_bbox".](gee_setup/step_6.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "The Asset ID should follow the OFPE convention. This example does not. It should read something like, 'hegedus_fakefarm_bbox'.", echo = FALSE}
+knitr::include_graphics('gee_setup/step_6.png')
+```
 
 **7.** After uploading, the 'Tasks' tab in the right side pane should appear orange. If you click on the orange 'Tasks' tab, a process should be present that indicates that Google Earth Engine is ingestin the asset.
 
-![](gee_setup/step_7a.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "", echo = FALSE}
+knitr::include_graphics('gee_setup/step_7a.png')
+```
 
-![Note that you will likely not have any other tasks present in the right side pane of the Google Earth Engine page.](gee_setup/step_7b.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "Note that you will likely not have any other tasks present in the right side pane of the Google Earth Engine page.", echo = FALSE}
+knitr::include_graphics('gee_setup/step_7b.png')
+```
 
 
 Now the farm boundary will always be available in the 'Assets' tab of Google Earth Engine, and can be imported and used in your scripts. 

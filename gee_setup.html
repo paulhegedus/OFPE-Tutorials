@@ -356,29 +356,35 @@ $(document).ready(function () {
 <h3>Tutorial</h3>
 <p>Before uploading farm bounding boxes as ‘Assets’, the user needs to go to <a href="https://earthengine.google.com/">Google Earth Engine</a> and request an account through the ‘Sign Up’ button.</p>
 <p><strong>1.</strong> From the Google sign in page, select ‘Create account’ if you do not have a Google Account. Otherwise sign in and skip to Step 3.</p>
-<p><img src="gee_setup/step_1.png" /></p>
+<p><img src="gee_setup/step_1.png" width="75%" style="display: block; margin: auto;" /></p>
 <p><strong>2.</strong> Fill out each step of the process.</p>
-<p><img src="gee_setup/step_2.png" /></p>
+<p><img src="gee_setup/step_2.png" width="75%" style="display: block; margin: auto;" /></p>
 <p><strong>3.</strong> After you have a Google Account, go back to <a href="https://earthengine.google.com/">Google Earth Engine</a> and click ‘Sign Up’. Fill out each step of the process and receive verification.</p>
 <p><strong>4.</strong> Go to the <a href="https://code.earthengine.google.com/">Google Earth Engine Code Editor</a> page and sign into your account. Allow Earth Engine Code Editor to access your Google Account. Now you should have access to the Google Earth Engine Code Editor window.</p>
-<p><img src="gee_setup/step_4a.png" /></p>
-<p><img src="gee_setup/step_4b.png" /></p>
-<div class="figure">
-<img src="gee_setup/step_4c.png" alt="" />
-<p class="caption">Note that you will likely not have any repositories in the left side pane of the Google Earth Engine page.</p>
+<p><img src="gee_setup/step_4a.png" width="75%" style="display: block; margin: auto;" /></p>
+<p><img src="gee_setup/step_4b.png" width="75%" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="gee_setup/step_4c.png" alt="Note that you will likely not have any repositories in the left side pane of the Google Earth Engine page." width="75%" />
+<p class="caption">
+Note that you will likely not have any repositories in the left side pane of the Google Earth Engine page.
+</p>
 </div>
 <p><strong>5.</strong> Go to the ‘Assets’ tab in the pane on the right side, and click the big red ‘NEW’ button, and select ‘Shape files’.</p>
-<p><img src="gee_setup/step_5.png" /></p>
+<p><img src="gee_setup/step_5.png" width="75%" style="display: block; margin: auto;" /></p>
 <p><strong>6.</strong> Browse to the directory of the farm bounding box you are uploading by clicking the red ‘SELECT’ button. Select the .shp, .shx, .dbf, and .prj file extensions for the specified shapefile. Amend the name if desired. OFPE convention is ‘<em>farmer</em>_<em>farmname</em>_bbox’. Click ‘Upload’.</p>
-<div class="figure">
-<img src="gee_setup/step_6.png" alt="" />
-<p class="caption">The Asset ID should follow the OFPE convention. This example does not. It should read something like, “hegedus_fakefarm_bbox”.</p>
+<div class="figure" style="text-align: center">
+<img src="gee_setup/step_6.png" alt="The Asset ID should follow the OFPE convention. This example does not. It should read something like, 'hegedus_fakefarm_bbox'." width="75%" />
+<p class="caption">
+The Asset ID should follow the OFPE convention. This example does not. It should read something like, ‘hegedus_fakefarm_bbox’.
+</p>
 </div>
 <p><strong>7.</strong> After uploading, the ‘Tasks’ tab in the right side pane should appear orange. If you click on the orange ‘Tasks’ tab, a process should be present that indicates that Google Earth Engine is ingestin the asset.</p>
-<p><img src="gee_setup/step_7a.png" /></p>
-<div class="figure">
-<img src="gee_setup/step_7b.png" alt="" />
-<p class="caption">Note that you will likely not have any other tasks present in the right side pane of the Google Earth Engine page.</p>
+<p><img src="gee_setup/step_7a.png" width="75%" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="gee_setup/step_7b.png" alt="Note that you will likely not have any other tasks present in the right side pane of the Google Earth Engine page." width="75%" />
+<p class="caption">
+Note that you will likely not have any other tasks present in the right side pane of the Google Earth Engine page.
+</p>
 </div>
 <p>Now the farm boundary will always be available in the ‘Assets’ tab of Google Earth Engine, and can be imported and used in your scripts.</p>
 </div>

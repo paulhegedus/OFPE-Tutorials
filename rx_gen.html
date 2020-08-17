@@ -355,19 +355,19 @@ $(document).ready(function () {
 <div id="rx-creation" class="section level4">
 <h4>Rx Creation</h4>
 <p>The activity workflow for generating prescriptions is described below in Figure 1 and 2. This workflow follows the same steps as the analysis and simulation process, albeit with some extra input parameters such as equipment and treatment specifications and, optionally, specified experimental rates. If it is not the first year making an experiment, the simualtion is performed under the specified conditions and used to generate optimized rates under the uncertainty surrounding the conditions selected. The optimum rates are used as the background rate and experimental rates are randomly stratified across the field. The resulting prescription is then downloaded to the user as an ESRI shapefile.</p>
-<div class="figure">
-<img src="diagrams/ofpe_rx_gen_pt1.png" alt="" />
-<p class="caption"><strong>Figure 1</strong>. Part 1 of the prescription building process. Demonstrates enrichment of yield or protein datasets with remotely sensed covariate data and experimental data collected on-farms. Blue activities are chained together by arrows, and black boxes indicate the addition of user inputs. Diamonds represent logical statements, where FALSE returns are routed from the side of the diamond and TRUE returns are routed from the top or bottom of the diamond.</p>
+<div class="figure" style="text-align: center">
+<img src="diagrams/ofpe_rx_gen_pt1.png" alt="**Figure 1**. Part 1 of the prescription building process. Demonstrates enrichment of yield or protein datasets with remotely sensed covariate data and experimental data collected on-farms. Blue activities are chained together by arrows, and black boxes indicate the addition of user inputs. Diamonds represent logical statements, where FALSE returns are routed from the side of the diamond and TRUE returns are routed from the top or bottom of the diamond." width="75%" />
+<p class="caption">
+<strong>Figure 1</strong>. Part 1 of the prescription building process. Demonstrates enrichment of yield or protein datasets with remotely sensed covariate data and experimental data collected on-farms. Blue activities are chained together by arrows, and black boxes indicate the addition of user inputs. Diamonds represent logical statements, where FALSE returns are routed from the side of the diamond and TRUE returns are routed from the top or bottom of the diamond.
+</p>
 </div>
-<div class="figure">
-<img src="diagrams/ofpe_rx_gen_pt2.png" alt="" />
-<p class="caption"><strong>Figure 2</strong>. Part 2 of the prescription building process. Demonstrates enrichment of yield or protein datasets with remotely sensed covariate data and experimental data collected on-farms. Blue activities are chained together by arrows, and black boxes indicate the addition of user inputs. Diamonds represent logical statements, where FALSE returns are routed from the side of the diamond and TRUE returns are routed from the top or bottom of the diamond.</p>
+<div class="figure" style="text-align: center">
+<img src="diagrams/ofpe_rx_gen_pt2.png" alt="**Figure 2**. Part 2 of the prescription building process. Demonstrates enrichment of yield or protein datasets with remotely sensed covariate data and experimental data collected on-farms. Blue activities are chained together by arrows, and black boxes indicate the addition of user inputs. Diamonds represent logical statements, where FALSE returns are routed from the side of the diamond and TRUE returns are routed from the top or bottom of the diamond." width="75%" />
+<p class="caption">
+<strong>Figure 2</strong>. Part 2 of the prescription building process. Demonstrates enrichment of yield or protein datasets with remotely sensed covariate data and experimental data collected on-farms. Blue activities are chained together by arrows, and black boxes indicate the addition of user inputs. Diamonds represent logical statements, where FALSE returns are routed from the side of the diamond and TRUE returns are routed from the top or bottom of the diamond.
+</p>
 </div>
 <p>A diagram demonstrating the implementation and existence of modules related to building a prescriptive map (Figure 3). This figure also includes the object oriented component diagrams for generating a prescription.</p>
-<div class="figure">
-<img src="diagrams" alt="" />
-<p class="caption"><strong>Figure 3.</strong></p>
-</div>
 </div>
 
 

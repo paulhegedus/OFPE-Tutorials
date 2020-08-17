@@ -6,15 +6,16 @@ Once all explanatory and covariate data is aggregated to the response data obser
 #### Execute Simulation/Analysis
 The activity workflow for simulating management outcomes is described below in Figures 1 and 2. Analysis and simulation require the user to select the field of interest and variables to optimize on (yield and/or protein) and other data specifications, farm specific parameters such as fixed costs and farmer selected input rates, and parameters related to the simulation, such as whether to vary prices, weather, or both. The user also has control over the model functional type used and how to optimize the input. The simulation is a Monte-Carlo simulation that iteratively selects a year from a period of record from which to predict crop responses and net-returns under that year's observed price and or weather conditions. After the simulation, the probability of the site-specific optimization management strategy can be compared to other strategies such as the minimum rate of input (typically zero for nitrogen fertilzier, non-zero for seeding rates), the farmer selected uniform rate, the full-field optimized rate, and the actual experiment applied. The user can use this tool to simulate different management outcomes under various economic and climate scenarios to decide conditions for which to make an input prescription for the upcoming year.
 
-![**Figure 1**. Part 1 of the data analysis and simulation process. Demonstrates enrichment of yield or protein datasets with remotely sensed covariate data and experimental data collected on-farms. Blue activities are chained together by arrows, and black boxes indicate the addition of user inputs. Diamonds represent logical statements, where FALSE returns are routed from the side of the diamond and TRUE returns are routed from the top or bottom of the diamond.](diagrams/ofpe_dat_sim_pt1.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "**Figure 1**. Part 1 of the data analysis and simulation process. Demonstrates enrichment of yield or protein datasets with remotely sensed covariate data and experimental data collected on-farms. Blue activities are chained together by arrows, and black boxes indicate the addition of user inputs. Diamonds represent logical statements, where FALSE returns are routed from the side of the diamond and TRUE returns are routed from the top or bottom of the diamond.", echo = FALSE}
+knitr::include_graphics('diagrams/ofpe_dat_sim_pt1.png')
+```
 
-
-![**Figure 2**. Part 2 of the data analysis and simulation process. Demonstrates enrichment of yield or protein datasets with remotely sensed covariate data and experimental data collected on-farms. Blue activities are chained together by arrows, and black boxes indicate the addition of user inputs. Diamonds represent logical statements, where FALSE returns are routed from the side of the diamond and TRUE returns are routed from the top or bottom of the diamond.](diagrams/ofpe_dat_sim_pt2.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "**Figure 2**. Part 2 of the data analysis and simulation process. Demonstrates enrichment of yield or protein datasets with remotely sensed covariate data and experimental data collected on-farms. Blue activities are chained together by arrows, and black boxes indicate the addition of user inputs. Diamonds represent logical statements, where FALSE returns are routed from the side of the diamond and TRUE returns are routed from the top or bottom of the diamond.", echo = FALSE}
+knitr::include_graphics('diagrams/ofpe_dat_sim_pt2.png')
+```
 
 
 A diagram demonstrating the implementation and existence of modules related to analysis and simulation (Figure 3). This figure also includes the object oriented component diagrams for analysis and simulation.
-
-![**Figure 3.**](diagrams/)
 
 
 

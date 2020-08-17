@@ -10,13 +10,19 @@ This tutorial is for setting up a Google Account and Google Drive to receive you
 
 **2.** Go to [Google Drive](https://www.google.com/drive/) and sign in, hit the big 'New' button from your home page.
 
-![](gd_setup/step_2.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "", echo = FALSE}
+knitr::include_graphics('gd_setup/step_2.png')
+```
 
-**3.** Select 'Folder' and name it *GEE_Surfaces*, then click 'Create'.
+**3.** Select 'Folder' and name it *GEE_Surfaces*, then click 'Create'. If you name it something other than *GEE_Surfaces* you will have to **edit** the Google Earth Engine code provided in this [tutorial](run_gee.html) to reflect your change. This is not covered in the tutorial so as the user you will take responsibility for any ensuing breakages in the code.
 
-![](gd_setup/step_3a.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "", echo = FALSE}
+knitr::include_graphics('gd_setup/step_3a.png')
+```
 
-![](gd_setup/step_3b.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "", echo = FALSE}
+knitr::include_graphics('gd_setup/step_3b.png')
+```
 
 Now there is a specific folder that the Google Earth Engine code will look for to save remotely sensed data.
 

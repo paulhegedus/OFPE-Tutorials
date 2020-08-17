@@ -358,123 +358,173 @@ $(document).ready(function () {
 <p>Follow the directions below for preparing your system for the OFPE data pipeline.</p>
 <p><strong>1.</strong> Go to the PostgreSQL website: <a href="https://www.postgresql.org" class="uri">https://www.postgresql.org</a></p>
 <p><strong>2.</strong> Browse to the ‘Download’ page.</p>
-<div class="figure">
-<img src="postgres_setup/step_2.png" alt="" />
-<p class="caption">Browse to the ‘Download’ page. There may be multiple routes.</p>
+<div class="figure" style="text-align: center">
+<img src="postgres_setup/step_2.png" alt="Browse to the 'Download' page. There may be multiple routes." width="75%" />
+<p class="caption">
+Browse to the ‘Download’ page. There may be multiple routes.
+</p>
 </div>
 <p><strong>3.</strong> Select the link for the appropriate operating system. This tutorial uses the ‘macOS’ download process. Differences to the Windows process will be pointed out.</p>
-<div class="figure">
-<img src="postgres_setup/step_3.png" alt="" />
-<p class="caption">Choose the operating system that your computer uses.</p>
+<div class="figure" style="text-align: center">
+<img src="postgres_setup/step_3.png" alt="Choose the operating system that your computer uses." width="75%" />
+<p class="caption">
+Choose the operating system that your computer uses.
+</p>
 </div>
 <p><strong>4.</strong> Follow the ‘Download the installer’ hyperlink. This is present on both the ‘macOS’ and ‘Windows’ pages. This link goes to the same place. The EDB installer is selected because it also installs <a href="https://www.pgadmin.org">pgAdmin</a>, a useful GUI for interfacing with your PostgreSQL database.</p>
-<div class="figure">
-<img src="postgres_setup/step_4.png" alt="" />
-<p class="caption">The hyperlink is the same for both macOS (left) and Windows (right).</p>
+<div class="figure" style="text-align: center">
+<img src="postgres_setup/step_4.png" alt="The hyperlink is the same for both macOS (left) and Windows (right)." width="75%" />
+<p class="caption">
+The hyperlink is the same for both macOS (left) and Windows (right).
+</p>
 </div>
 <p><strong>5.</strong> Select the ‘Download’ link for your operating system. It is a good idea to download the latest version. You may need to allow downloads from this website.</p>
-<div class="figure">
-<img src="postgres_setup/step_5.png" alt="" />
-<p class="caption">The most recent version of PostgreSQL is 12.3 at the time of this tutorial. Select the latest version you see.</p>
+<div class="figure" style="text-align: center">
+<img src="postgres_setup/step_5.png" alt="The most recent version of PostgreSQL is 12.3 at the time of this tutorial. Select the latest version you see." width="75%" />
+<p class="caption">
+The most recent version of PostgreSQL is 12.3 at the time of this tutorial. Select the latest version you see.
+</p>
 </div>
 <p><strong>6.</strong> Open the downloaded installer from your ‘Downloads’ folder. The ‘macOS’ installer is a .dmg and ‘Windows’ installer is a .exe. The opening process may be different in the Windows process than the images below. The user may need to enter their password to allow the download, depending on your system settings.</p>
-<div class="figure">
-<img src="postgres_setup/step_6.png" alt="" />
-<p class="caption">The Windows download may look different from the images here. Follow the instructions until a similar screen as in Step 7 is seen.</p>
+<div class="figure" style="text-align: center">
+<img src="postgres_setup/step_6.png" alt="The Windows download may look different from the images here. Follow the instructions until a similar screen as in Step 7 is seen." width="75%" />
+<p class="caption">
+The Windows download may look different from the images here. Follow the instructions until a similar screen as in Step 7 is seen.
+</p>
 </div>
 <p><strong>7.</strong> Follow the instructions in the PostgreSQL Setup wizard to download the software until the step where a password for the ‘postgres’ superuser (Step 8). This may look different in a Windows system compared to the images below. Use all of the default options.</p>
-<p><img src="postgres_setup/step_7a.png" /></p>
-<p><img src="postgres_setup/step_7b.png" /></p>
-<p><img src="postgres_setup/step_7c.png" /></p>
-<div class="figure">
-<img src="postgres_setup/step_7d.png" alt="" />
-<p class="caption">The Windows screen may look different from the images here. Follow the instructions.</p>
+<p><img src="postgres_setup/step_7a.png" width="75%" style="display: block; margin: auto;" /></p>
+<p><img src="postgres_setup/step_7b.png" width="75%" style="display: block; margin: auto;" /></p>
+<p><img src="postgres_setup/step_7c.png" width="75%" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center">
+<img src="postgres_setup/step_7d.png" alt="The Windows screen may look different from the images here. Follow the instructions." width="75%" />
+<p class="caption">
+The Windows screen may look different from the images here. Follow the instructions.
+</p>
 </div>
 <p><strong>8.</strong> You need to supply a password for the ‘postgres’ superuser. This is the superuser that the locally hosted database in the OFPE format uses. Note, you will need to remember this password for future use. Leave the port number as the default 5432 and proceed with the rest of the defaults through the installation.</p>
-<div class="figure">
-<img src="postgres_setup/step_8a.png" alt="" />
-<p class="caption">Remember this password unless you’re a masochist.</p>
+<div class="figure" style="text-align: center">
+<img src="postgres_setup/step_8a.png" alt="Remember this password unless you're a masochist." width="75%" />
+<p class="caption">
+Remember this password unless you’re a masochist.
+</p>
 </div>
-<div class="figure">
-<img src="postgres_setup/step_8b.png" alt="" />
-<p class="caption">This image shows port 5432, but use 5433 for a Mac.</p>
+<div class="figure" style="text-align: center">
+<img src="postgres_setup/step_8b.png" alt="This image shows port 5432, but use 5433 for a Mac." width="75%" />
+<p class="caption">
+This image shows port 5432, but use 5433 for a Mac.
+</p>
 </div>
-<p><img src="postgres_setup/step_8c.png" /></p>
-<p><img src="postgres_setup/step_8d.png" /></p>
-<p><img src="postgres_setup/step_8e.png" /></p>
-<p><img src="postgres_setup/step_8f.png" /></p>
+<p><img src="postgres_setup/step_8c.png" width="75%" style="display: block; margin: auto;" /></p>
+<p><img src="postgres_setup/step_8d.png" width="75%" style="display: block; margin: auto;" /></p>
+<p><img src="postgres_setup/step_8e.png" width="75%" style="display: block; margin: auto;" /></p>
+<p><img src="postgres_setup/step_8f.png" width="75%" style="display: block; margin: auto;" /></p>
 <p><strong>9.</strong> Follow this step 9 if you are using a PC. First, open the Stack Builder when prompted, select PostGIS from the Spatial Extensions dropdown, and click through the ensuing pop-ups.</p>
-<div class="figure">
-<img src="postgres_setup/step_9a_windows.png" alt="" />
-<p class="caption">Open the Stack Builder and select your PostgreSQL server from the dropdwon.</p>
+<div class="figure" style="text-align: center">
+<img src="postgres_setup/step_9a_windows.png" alt="Open the Stack Builder and select your PostgreSQL server from the dropdwon." width="75%" />
+<p class="caption">
+Open the Stack Builder and select your PostgreSQL server from the dropdwon.
+</p>
 </div>
-<div class="figure">
-<img src="postgres_setup/step_9b_windows.png" alt="" />
-<p class="caption">Select the PostGIS option in the Spatial Extension dropdown menu.</p>
+<div class="figure" style="text-align: center">
+<img src="postgres_setup/step_9b_windows.png" alt="Select the PostGIS option in the Spatial Extension dropdown menu." width="75%" />
+<p class="caption">
+Select the PostGIS option in the Spatial Extension dropdown menu.
+</p>
 </div>
-<div class="figure">
-<img src="postgres_setup/step_9c_windows.png" alt="" />
-<p class="caption">Select Yes for all ensuing pop-ups.</p>
+<div class="figure" style="text-align: center">
+<img src="postgres_setup/step_9c_windows.png" alt="Select Yes for all ensuing pop-ups." width="75%" />
+<p class="caption">
+Select Yes for all ensuing pop-ups.
+</p>
 </div>
-<div class="figure">
-<img src="postgres_setup/step_9d_windows.png" alt="" />
-<p class="caption">Select Finish to complete.</p>
+<div class="figure" style="text-align: center">
+<img src="postgres_setup/step_9d_windows.png" alt="Select Finish to complete." width="75%" />
+<p class="caption">
+Select Finish to complete.
+</p>
 </div>
 <p><strong>9.</strong> Follow this step 9 if you are using a Mac. First, open the Stack Builder if prompted. Otherwise, browse to it from /Library/PostgreSQL/12/stackbuilder.app. Select PostGIS from the Spatial Extensions dropdown, and click through the ensuing pop-ups.</p>
-<div class="figure">
-<img src="postgres_setup/step_9a_mac.png" alt="" />
-<p class="caption">Open the Stack Builder and select your PostgreSQL server from the dropdwon.</p>
+<div class="figure" style="text-align: center">
+<img src="postgres_setup/step_9a_mac.png" alt="Open the Stack Builder and select your PostgreSQL server from the dropdwon." width="75%" />
+<p class="caption">
+Open the Stack Builder and select your PostgreSQL server from the dropdwon.
+</p>
 </div>
-<div class="figure">
-<img src="postgres_setup/step_9b_windows.png" alt="" />
-<p class="caption">Select the PostGIS option in the Spatial Extension dropdown menu.</p>
+<div class="figure" style="text-align: center">
+<img src="postgres_setup/step_9b_windows.png" alt="Select the PostGIS option in the Spatial Extension dropdown menu." width="75%" />
+<p class="caption">
+Select the PostGIS option in the Spatial Extension dropdown menu.
+</p>
 </div>
-<div class="figure">
-<img src="postgres_setup/step_9b_mac.png" alt="" />
-<p class="caption">Select Next.</p>
+<div class="figure" style="text-align: center">
+<img src="postgres_setup/step_9b_mac.png" alt="Select Next." width="75%" />
+<p class="caption">
+Select Next.
+</p>
 </div>
-<div class="figure">
-<img src="postgres_setup/step_9c_mac.png" alt="" />
-<p class="caption">Enter your Master Password.</p>
+<div class="figure" style="text-align: center">
+<img src="postgres_setup/step_9c_mac.png" alt="Enter your Master Password." width="75%" />
+<p class="caption">
+Enter your Master Password.
+</p>
 </div>
-<div class="figure">
-<img src="postgres_setup/step_9d_mac.png" alt="" />
-<p class="caption">Hit Next.</p>
+<div class="figure" style="text-align: center">
+<img src="postgres_setup/step_9d_mac.png" alt="Hit Next." width="75%" />
+<p class="caption">
+Hit Next.
+</p>
 </div>
-<div class="figure">
-<img src="postgres_setup/step_9e_mac.png" alt="" />
-<p class="caption">Hit Finish when the installation is complete.</p>
+<div class="figure" style="text-align: center">
+<img src="postgres_setup/step_9e_mac.png" alt="Hit Finish when the installation is complete." width="75%" />
+<p class="caption">
+Hit Finish when the installation is complete.
+</p>
 </div>
-<div class="figure">
-<img src="postgres_setup/step_9f_mac.png" alt="" />
-<p class="caption">And hit Finish in the Stack Builder window.</p>
+<div class="figure" style="text-align: center">
+<img src="postgres_setup/step_9f_mac.png" alt="And hit Finish in the Stack Builder window." width="75%" />
+<p class="caption">
+And hit Finish in the Stack Builder window.
+</p>
 </div>
 <p><strong>10.</strong> After the installation has completed, there should be a <em>pgAdmin</em> application. This will open the <em>pgAdmin</em> GUI in your preffered web browser. Upon opening, you will need to give a password to be your master password for <em>pgAdmin</em>. This will require inputting a password and selecting “Reset Master Password”. Then select the ‘Servers’ drop down and enter the password for the ‘postgres’ superuser you made in Step 8. The PostgreSQL server dropdown should show the default ‘postgres’ database.</p>
-<div class="figure">
-<img src="postgres_setup/step_10a.png" alt="" />
-<p class="caption">Open the <em>pgAdmin4</em> application to view your databases and servers.</p>
+<div class="figure" style="text-align: center">
+<img src="postgres_setup/step_10a.png" alt="Open the *pgAdmin4* application to view your databases and servers." width="75%" />
+<p class="caption">
+Open the <em>pgAdmin4</em> application to view your databases and servers.
+</p>
 </div>
-<div class="figure">
-<img src="postgres_setup/step_10b.png" alt="" />
-<p class="caption">You will need to select ‘Reset Master Password’ then enter your new master password for pgAdmin and select ‘OK’.</p>
+<div class="figure" style="text-align: center">
+<img src="postgres_setup/step_10b.png" alt="You will need to select 'Reset Master Password' then enter your new master password for pgAdmin and select 'OK'." width="75%" />
+<p class="caption">
+You will need to select ‘Reset Master Password’ then enter your new master password for pgAdmin and select ‘OK’.
+</p>
 </div>
-<div class="figure">
-<img src="postgres_setup/step_10c.png" alt="" />
-<p class="caption">Select the ‘Servers’ drop down in the left hand pane to activate the password pop up. Enter the password from Step 8 and check ‘Save Password’ then ‘OK’. You may or may not see this error message.</p>
+<div class="figure" style="text-align: center">
+<img src="postgres_setup/step_10c.png" alt="Select the 'Servers' drop down in the left hand pane to activate the password pop up. Enter the password from Step 8 and check 'Save Password' then 'OK'. You may or may not see this error message." width="75%" />
+<p class="caption">
+Select the ‘Servers’ drop down in the left hand pane to activate the password pop up. Enter the password from Step 8 and check ‘Save Password’ then ‘OK’. You may or may not see this error message.
+</p>
 </div>
-<div class="figure">
-<img src="postgres_setup/step_10d.png" alt="" />
-<p class="caption">The default ‘postgres’ database should be the only database visible.</p>
+<div class="figure" style="text-align: center">
+<img src="postgres_setup/step_10d.png" alt="The default 'postgres' database should be the only database visible." width="75%" />
+<p class="caption">
+The default ‘postgres’ database should be the only database visible.
+</p>
 </div>
 <p><strong>10.</strong> Now, we are ready to create our database. Go to the ‘Object’ tab, select ‘Create’, then ‘Database…’.</p>
-<div class="figure">
-<img src="postgres_setup/step_11.png" alt="" />
-<p class="caption">Select Object&gt;&gt;Create&gt;&gt;Database.</p>
+<div class="figure" style="text-align: center">
+<img src="postgres_setup/step_11.png" alt="Select Object&gt;&gt;Create&gt;&gt;Database." width="75%" />
+<p class="caption">
+Select Object&gt;&gt;Create&gt;&gt;Database.
+</p>
 </div>
 <p><strong>11.</strong> Now, type your desired database name in the ‘Database’ field of the pop-up window. Then click Save. In this example I used a database name called ‘OFPE’.</p>
-<div class="figure">
-<img src="postgres_setup/step_12.png" alt="" />
-<p class="caption">Provide a database name.</p>
+<div class="figure" style="text-align: center">
+<img src="postgres_setup/step_12.png" alt="Provide a database name." width="75%" />
+<p class="caption">
+Provide a database name.
+</p>
 </div>
 <p><strong>12.</strong> Now you are all set up with PostgreSQL with a ‘postgres’ superuser that will be used for creating the OFPE formatted database. Proceed to the database creation <a href="db_creation.html">diagrams</a> and <a href="https://github.com/paulhegedus/OFPE/blob/master/vignettes/A1-DB_Create.Rmd">vignette</a> to begin the process of creating a database in the OFPE format. The user may need to proceed to the <a href="create_shp_qgis.html">tutorial</a> for creating shapefiles for farm and field boundaries.</p>
 </div>

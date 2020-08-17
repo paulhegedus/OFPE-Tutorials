@@ -12,109 +12,163 @@ Follow the directions below for preparing your system for the OFPE data pipeline
 
 **2.** Browse to the 'Download' page.
 
-![Browse to the 'Download' page. There may be multiple routes.](postgres_setup/step_2.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "Browse to the 'Download' page. There may be multiple routes.", echo = FALSE}
+knitr::include_graphics('postgres_setup/step_2.png')
+```
 
 
 **3.** Select the link for the appropriate operating system. This tutorial uses the 'macOS' download process. Differences to the Windows process will be pointed out.
 
-![Choose the operating system that your computer uses.](postgres_setup/step_3.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "Choose the operating system that your computer uses.", echo = FALSE}
+knitr::include_graphics('postgres_setup/step_3.png')
+```
 
 
 **4.** Follow the 'Download the installer' hyperlink. This is present on both the 'macOS' and 'Windows' pages. This link goes to the same place. The EDB installer is selected because it also installs [pgAdmin](https://www.pgadmin.org), a useful GUI for interfacing with your PostgreSQL database.
 
-![The hyperlink is the same for both macOS (left) and Windows (right).](postgres_setup/step_4.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "The hyperlink is the same for both macOS (left) and Windows (right).", echo = FALSE}
+knitr::include_graphics('postgres_setup/step_4.png')
+```
 
 
 **5.** Select the 'Download' link for your operating system. It is a good idea to download the latest version. You may need to allow downloads from this website.
 
-![The most recent version of PostgreSQL is 12.3 at the time of this tutorial. Select the latest version you see.](postgres_setup/step_5.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "The most recent version of PostgreSQL is 12.3 at the time of this tutorial. Select the latest version you see.", echo = FALSE}
+knitr::include_graphics('postgres_setup/step_5.png')
+```
 
 
 **6.** Open the downloaded installer from your 'Downloads' folder. The 'macOS' installer is a .dmg and 'Windows' installer is a .exe. The opening process may be different in the Windows process than the images below. The user may need to enter their password to allow the download, depending on your system settings.
 
-![The Windows download may look different from the images here. Follow the instructions until a similar screen as in Step 7 is seen.](postgres_setup/step_6.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "The Windows download may look different from the images here. Follow the instructions until a similar screen as in Step 7 is seen.", echo = FALSE}
+knitr::include_graphics('postgres_setup/step_6.png')
+```
 
 
 **7.** Follow the instructions in the PostgreSQL Setup wizard to download the software until the step where a password for the 'postgres' superuser (Step 8). This may look different in a Windows system compared to the images below. Use all of the default options.
 
-![](postgres_setup/step_7a.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "", echo = FALSE}
+knitr::include_graphics('postgres_setup/step_7a.png')
+```
 
-![](postgres_setup/step_7b.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "", echo = FALSE}
+knitr::include_graphics('postgres_setup/step_7b.png')
+```
 
-![](postgres_setup/step_7c.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "", echo = FALSE}
+knitr::include_graphics('postgres_setup/step_7c.png')
+```
 
-![The Windows screen may look different from the images here. Follow the instructions.](postgres_setup/step_7d.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "The Windows screen may look different from the images here. Follow the instructions.", echo = FALSE}
+knitr::include_graphics('postgres_setup/step_7d.png')
+```
 
 
 **8.** You need to supply a password for the 'postgres' superuser. This is the superuser that the locally hosted database in the OFPE format uses. Note, you will need to remember this password for future use. Leave the port number as the default 5432 and proceed with the rest of the defaults through the installation.
 
-![Remember this password unless you're a masochist.](postgres_setup/step_8a.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "Remember this password unless you're a masochist.", echo = FALSE}
+knitr::include_graphics('postgres_setup/step_8a.png')
+```
 
-![This image shows port 5432, but use 5433 for a Mac.](postgres_setup/step_8b.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "This image shows port 5432, but use 5433 for a Mac.", echo = FALSE}
+knitr::include_graphics('postgres_setup/step_8b.png')
+```
 
-![](postgres_setup/step_8c.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "", echo = FALSE}
+knitr::include_graphics('postgres_setup/step_8c.png')
+```
 
-![](postgres_setup/step_8d.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "", echo = FALSE}
+knitr::include_graphics('postgres_setup/step_8d.png')
+```
 
-![](postgres_setup/step_8e.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "", echo = FALSE}
+knitr::include_graphics('postgres_setup/step_8e.png')
+```
 
-![](postgres_setup/step_8f.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "", echo = FALSE}
+knitr::include_graphics('postgres_setup/step_8f.png')
+```
 
 **9.** Follow this step 9 if you are using a PC. First, open the Stack Builder when prompted, select PostGIS from the Spatial Extensions dropdown, and click through the ensuing pop-ups. 
 
-![Open the Stack Builder and select your PostgreSQL server from the dropdwon.](postgres_setup/step_9a_windows.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "Open the Stack Builder and select your PostgreSQL server from the dropdwon.", echo = FALSE}
+knitr::include_graphics('postgres_setup/step_9a_windows.png')
+```
 
+```{r, out.width = "75%", fig.align = "center", fig.cap = "Select the PostGIS option in the Spatial Extension dropdown menu.", echo = FALSE}
+knitr::include_graphics('postgres_setup/step_9b_windows.png')
+```
 
-![Select the PostGIS option in the Spatial Extension dropdown menu.](postgres_setup/step_9b_windows.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "Select Yes for all ensuing pop-ups.", echo = FALSE}
+knitr::include_graphics('postgres_setup/step_9c_windows.png')
+```
 
-
-![Select Yes for all ensuing pop-ups.](postgres_setup/step_9c_windows.png)
-
-
-![Select Finish to complete.](postgres_setup/step_9d_windows.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "Select Finish to complete.", echo = FALSE}
+knitr::include_graphics('postgres_setup/step_9d_windows.png')
+```
 
 **9.** Follow this step 9 if you are using a Mac. First, open the Stack Builder if prompted. Otherwise, browse to it from /Library/PostgreSQL/12/stackbuilder.app. Select PostGIS from the Spatial Extensions dropdown, and click through the ensuing pop-ups. 
 
-![Open the Stack Builder and select your PostgreSQL server from the dropdwon.](postgres_setup/step_9a_mac.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "Open the Stack Builder and select your PostgreSQL server from the dropdwon.", echo = FALSE}
+knitr::include_graphics('postgres_setup/step_9a_mac.png')
+```
 
+```{r, out.width = "75%", fig.align = "center", fig.cap = "Select the PostGIS option in the Spatial Extension dropdown menu.", echo = FALSE}
+knitr::include_graphics('postgres_setup/step_9b_windows.png')
+```
 
-![Select the PostGIS option in the Spatial Extension dropdown menu.](postgres_setup/step_9b_windows.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "Select Next.", echo = FALSE}
+knitr::include_graphics('postgres_setup/step_9b_mac.png')
+```
 
+```{r, out.width = "75%", fig.align = "center", fig.cap = "Enter your Master Password.", echo = FALSE}
+knitr::include_graphics('postgres_setup/step_9c_mac.png')
+```
 
-![Select Next.](postgres_setup/step_9b_mac.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "Hit Next.", echo = FALSE}
+knitr::include_graphics('postgres_setup/step_9d_mac.png')
+```
 
+```{r, out.width = "75%", fig.align = "center", fig.cap = "Hit Finish when the installation is complete.", echo = FALSE}
+knitr::include_graphics('postgres_setup/step_9e_mac.png')
+```
 
-![Enter your Master Password.](postgres_setup/step_9c_mac.png)
-
-
-![Hit Next.](postgres_setup/step_9d_mac.png)
-
-
-![Hit Finish when the installation is complete.](postgres_setup/step_9e_mac.png)
-
-
-![And hit Finish in the Stack Builder window.](postgres_setup/step_9f_mac.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "And hit Finish in the Stack Builder window.", echo = FALSE}
+knitr::include_graphics('postgres_setup/step_9f_mac.png')
+```
 
 
 **10.** After the installation has completed, there should be a *pgAdmin* application. This will open the *pgAdmin* GUI in your preffered web browser. Upon opening, you will need to give a password to be your master password for *pgAdmin*. This will require inputting a password and selecting "Reset Master Password". Then select the 'Servers' drop down and enter the password for the 'postgres' superuser you made in Step 8. The PostgreSQL server dropdown should show the default 'postgres' database.
 
-![Open the *pgAdmin4* application to view your databases and servers.](postgres_setup/step_10a.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "Open the *pgAdmin4* application to view your databases and servers.", echo = FALSE}
+knitr::include_graphics('postgres_setup/step_10a.png')
+```
 
+```{r, out.width = "75%", fig.align = "center", fig.cap = "You will need to select 'Reset Master Password' then enter your new master password for pgAdmin and select 'OK'.", echo = FALSE}
+knitr::include_graphics('postgres_setup/step_10b.png')
+```
 
-![You will need to select 'Reset Master Password' then enter your new master password for pgAdmin and select 'OK'.](postgres_setup/step_10b.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "Select the 'Servers' drop down in the left hand pane to activate the password pop up. Enter the password from Step 8 and check 'Save Password' then 'OK'. You may or may not see this error message.", echo = FALSE}
+knitr::include_graphics('postgres_setup/step_10c.png')
+```
 
-![Select the 'Servers' drop down in the left hand pane to activate the password pop up. Enter the password from Step 8 and check 'Save Password' then 'OK'. You may or may not see this error message.](postgres_setup/step_10c.png)
-
-![The default 'postgres' database should be the only database visible.](postgres_setup/step_10d.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "The default 'postgres' database should be the only database visible.", echo = FALSE}
+knitr::include_graphics('postgres_setup/step_10d.png')
+```
 
 **10.** Now, we are ready to create our database. Go to the 'Object' tab, select 'Create', then 'Database...'.
 
-![Select Object>>Create>>Database.](postgres_setup/step_11.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "Select Object>>Create>>Database.", echo = FALSE}
+knitr::include_graphics('postgres_setup/step_11.png')
+```
 
 
 **11.** Now, type your desired database name in the 'Database' field of the pop-up window. Then click Save. In this example I used a database name called 'OFPE'.
 
-![Provide a database name.](postgres_setup/step_12.png)
+```{r, out.width = "75%", fig.align = "center", fig.cap = "Provide a database name.", echo = FALSE}
+knitr::include_graphics('postgres_setup/step_12.png')
+```
 
 **12.** Now you are all set up with PostgreSQL with a 'postgres' superuser that will be used for creating the OFPE formatted database. Proceed to the database creation [diagrams](db_creation.html) and  [vignette](https://github.com/paulhegedus/OFPE/blob/master/vignettes/A1-DB_Create.Rmd) to begin the process of creating a database in the OFPE format. The user may need to proceed to the [tutorial](create_shp_qgis.html) for creating shapefiles for farm and field boundaries.
 
