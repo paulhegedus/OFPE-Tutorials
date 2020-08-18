@@ -42,7 +42,7 @@ knitr::include_graphics('create_shp_qgis/step_pre_4.png')
 
 
 ### Field Boundary
-A field boundary should represent the boundary of an OFPE data-intensively managed field. This is used to identify incoming on-farm data, clip remotely-sensed data, for determining a 30m buffer from the field edge for cleaning, and creating a net of management cells across the field.
+A field boundary should represent the boundary of an OFPE data-intensively managed field. This is used to identify incoming on-farm data, clip remotely-sensed data, for determining a 30m buffer from the field edge for cleaning, and creating a net of management cells across the field. When creating, make one column in the data named 'id' with an integer indicating the portion of the field. Most fields are continuous and will have a single 'id' of 1, however fields with multiple unconnected sections will have multiple entries for 'id'.
 
 **1.** Open QGIS. If not downloaded, see above. 
 
@@ -101,7 +101,7 @@ knitr::include_graphics('create_shp_qgis/step_fld_9.png')
 You now have a field boundary that can be used in your OFPE database. See this  [diagram](db_creation.html) for where to add in field boundaries to the OFPE data pipeline.
 
 ### Farm Bounding Box 
-A farm bounding box should be a polygon that surrounds the fields of the owning/managing farmer. It does not need to trace property or management lines, but cannot cover another farmer's OFPE field. If it covers another farmer's fields, the farm bounding box cannot 1) cover another OFPE farmer's field or 2) if covering another OFPE farmer's field, that field cannot be used for analysis or experimentation. 
+A farm bounding box should be a polygon that surrounds the fields of the owning/managing farmer. It does not need to trace property or management lines, but cannot cover another farmer's OFPE field. If it covers another farmer's fields, the farm bounding box cannot 1) cover another OFPE farmer's field or 2) if covering another OFPE farmer's field, that field cannot be used for analysis or experimentation. When creating, make one column in the data named 'id' with an integer indicating the portion of the field. Most fields are continuous and will have a single 'id' of 1, however fields with multiple unconnected sections will have multiple entries for 'id'.
 
 **1.** Follow Steps 1 - 7 from the **Field Boundary** section.
 
