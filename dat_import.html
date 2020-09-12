@@ -297,7 +297,7 @@ $(document).ready(function () {
       <a href="data_agg.html">Data Aggregation</a>
     </li>
     <li>
-      <a href="sim_anal.html">Simulation/Analysis</a>
+      <a href="sim_analysis.html">Simulation/Analysis</a>
     </li>
     <li>
       <a href="rx_gen.html">Prescription Generation</a>
@@ -351,10 +351,10 @@ $(document).ready(function () {
 </div>
 
 
-<p>The stream of data available from agricultural fields include data collected from farm machinery during normal farm operations such as seeding, spraying, and harvesting. Additionally, there is a vast amount of data available from remotely sensed satellite or sensor data.</p>
+<p>The stream of data available from agricultural fields include data collected from farm machinery during normal farm operations such as seeding, spraying, and harvesting. Additionally, there is a vast amount of data available from remotely sensed satellite or sensor data. See the OFPE package documentation for details on specific classes, functions, and processes.</p>
 <div id="on-farm-data" class="section level4">
 <h4>On-Farm Data</h4>
-<p>The OFPE project focuses on winter wheat yield and protein as response variables and nitrogen fertilizer or seed rates as explanatory variables, depending on whether the field is farmed conventionally or organically, respectively. These data are collected from the farm machinery as ESRI Shapefiles, barring CropScan protein data that is gathered as a comma-separated values file. These .csv files can be visualized using this <a href="https://paulhegedus.shinyapps.io/OFPE_Protein_Application/?_ga=2.69643152.1880072526.1592481594-590292424.1592115204">web application</a>. These data can be batch uploaded to the database through a script that automatically identifies and organizes each upload.</p>
+<p>The OFPE project focuses on winter wheat yield and protein as response variables and nitrogen fertilizer or seed rates as explanatory variables, depending on whether the field is farmed conventionally or organically, respectively. These data are collected from the farm machinery as ESRI Shapefiles, barring CropScan protein data that is gathered as a comma-separated values file. These .csv files can be visualized using this <a href="https://paulhegedus.shinyapps.io/OFPE_Protein_Application/?_ga=2.69643152.1880072526.1592481594-590292424.1592115204">web application</a>. These data can be batch uploaded to the database through a script that automatically identifies and organizes each upload. The data is first queried against the boundaries of the farms to identify the farmer, after which the field and year the data was gathered is searched for within the data. The type of data is then identified to determine what table within the farmer’s schema the data will stored.</p>
 <p>The process for importing on-farm data to the database is outlined in the activity diagram below (Figure 1), and covers the pre-processing to the data upload steps.</p>
 <div class="figure" style="text-align: center">
 <img src="diagrams/ofpe_dat_import.png" alt="**Figure 1**. The on-farm data import process. Demonstrates pre-upload data processing and upload of data to database. Blue activities are chained together by arrows, and black boxes indicate the addition of user inputs. Diamonds represent logical statements, where FALSE returns are routed from the side of the diamond and TRUE returns are routed from the top or bottom of the diamond." width="75%" />

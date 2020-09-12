@@ -18,7 +18,7 @@ navbar:
         - text: "Data Aggregation"
           href: data_agg.html
         - text: "Simulation/Analysis"
-          href: sim_anal.html
+          href: sim_analysis.html
         - text: "Prescription Generation"
           href: rx_gen.html
     - text: "Tutorials"
