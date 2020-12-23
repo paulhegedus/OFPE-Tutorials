@@ -69,22 +69,22 @@
 // USER INPUTS
 //----------------------------------------------------------------
 // Select vars to collect 1=yes, 0=no
-var precCY = 0; 
-var precPY = 0; 
-var gddCY = 0; 
-var gddPY = 0; 
-var aspect = 0; 
-var slopeI = 0; 
-var elev = 0; 
-var tpiI = 0; 
-var ndviCY = 0; 
-var ndviPY = 0; 
-var ndreCY = 0; 
-var ndrePY = 0; 
-var clreCY = 0; 
-var clrePY = 0; 
-var smapCY = 0;
-var smapPY = 0;
+var precCY = 1; 
+var precPY = 1; 
+var gddCY = 1; 
+var gddPY = 1; 
+var aspect = 1; 
+var slopeI = 1; 
+var elev = 1; 
+var tpiI = 1; 
+var ndviCY = 1; 
+var ndviPY = 1; 
+var ndreCY = 1; 
+var ndrePY = 1; 
+var clreCY = 1; 
+var clrePY = 1; 
+var smapCY = 1;
+var smapPY = 1;
 var olmGrtgrp = 1;
 var olmTexture = 1;
 var olmBulkDens = 1;
@@ -95,8 +95,8 @@ var olmWaterContent = 1;
 var olmCarbonContent = 1;
 
 // String or sequence of years to get data for
-//var years = ['2000','2001','2002','2003','2004','2005','2006','2007','2008','2009','2010','2011','2012','2013','2014','2015','2016','2017','2018','2019','2020'];
-var years = ['2015'];
+var years = ['2000','2001','2002','2003','2004','2005','2006','2007','2008','2009','2010','2011','2012','2013','2014','2015','2016','2017','2018','2019','2020'];
+//var years = ['2015'];
 
 // String of farms (assets that are ingested alread) to loop over (NEED to add others when you have them)
 var farms = ['bailey_fortbenton','broyles_columbus','broyles_rapelje','loewen_steinbach','merja_cascade','merja_sunriver','merja_vaughn','norgaard_shonkin','oconnor_ekalaka','quinn_bigsandy','wood_carter','wood_loma','wood_virgelle','vandyke_gallatin']; //
