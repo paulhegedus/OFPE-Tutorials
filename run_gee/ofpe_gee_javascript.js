@@ -1,7 +1,15 @@
 // Script for collecting all farms GEE variables for a specified set/sequence of year(s)
 // Paul Hegedus - 20191109
-// This code runs in Google Earth Engine Code Editor.
+// This code runs in Google Earth Engine Code Editor. Follow the links below to set up and prepare 
+// Google Drive.
+// https://paulhegedus.github.io/OFPE-Website/gee_setup.html
+// https://paulhegedus.github.io/OFPE-Website/gd_setup.html
+// Most importantly, the link below, for using this code;
+// https://paulhegedus.github.io/OFPE-Website/run_gee.html
 
+// Script for collecting all farms GEE variables for a specified set/sequence of year(s)
+// Paul Hegedus - 20191109
+// This code runs in Google Earth Engine Code Editor.
 //----------------------------------------------------------------
 // Assets (COPY AND PASTE, UNCOMMENT, & IMPORT)
 //----------------------------------------------------------------
